@@ -1,0 +1,31 @@
+
+<svg width="192px" height="192px" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="192" height="192"></rect>
+        <linearGradient x1="86.9182136%" y1="85.7359648%" x2="26.6109983%" y2="85.7359648%" id="linearGradient-3">
+            <stop stop-color="#62FAB8" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#F8F166" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="76.8596256%" y2="24.9357397%" id="linearGradient-4">
+            <stop stop-color="#F75959" offset="0%"></stop>
+            <stop stop-color="#59CAF7" stop-opacity="0.496065444" offset="100%"></stop>
+        </linearGradient>
+        <path d="M113,44 L124,44 L124,55 L113,55 L113,44 Z M71,44 L82,44 L82,55 L71,55 L71,44 Z M85,30 L96,30 L96,41 L85,41 L85,30 Z M85,72 L96,72 L96,83 L85,83 L85,72 Z M71,72 L82,72 L82,83 L71,83 L71,72 Z M57,72 L68,72 L68,83 L57,83 L57,72 Z M43,58 L54,58 L54,69 L43,69 L43,58 Z M85,44 L96,44 L96,55 L85,55 L85,44 Z M85,86 L96,86 L96,97 L85,97 L85,86 Z M85,58 L96,58 L96,69 L85,69 L85,58 Z M85,100 L96,100 L96,111 L85,111 L85,100 Z M85,114 L96,114 L96,125 L85,125 L85,114 Z M71,128 L82,128 L82,139 L71,139 L71,128 Z M57,128 L68,128 L68,139 L57,139 L57,128 Z M57,142 L68,142 L68,153 L57,153 L57,142 Z M43,142 L54,142 L54,153 L43,153 L43,142 Z M99,30 L110,30 L110,41 L99,41 L99,30 Z M99,72 L110,72 L110,83 L99,83 L99,72 Z M113,72 L124,72 L124,83 L113,83 L113,72 Z M127,72 L138,72 L138,83 L127,83 L127,72 Z M141,86 L152,86 L152,97 L141,97 L141,86 Z M99,44 L110,44 L110,55 L99,55 L99,44 Z M99,86 L110,86 L110,97 L99,97 L99,86 Z M99,58 L110,58 L110,69 L99,69 L99,58 Z M99,100 L110,100 L110,111 L99,111 L99,100 Z M113,114 L124,114 L124,125 L113,125 L113,114 Z M127,128 L138,128 L138,139 L127,139 L127,128 Z M127,142 L138,142 L138,153 L127,153 L127,142 Z M113,142 L124,142 L124,153 L113,153 L113,142 Z M113,156 L124,156 L124,167 L113,167 L113,156 Z M99,114 L110,114 L110,125 L99,125 L99,114 Z" id="path-5"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-13" transform="translate(-44.000000, -164.000000)">
+            <g id="Group-4-Copy-11" transform="translate(44.000000, 164.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle-2-Copy-3" fill="#212121" xlink:href="#path-1"></use>
+                <g id="Rectangle-Copy-7" mask="url(#mask-2)">
+                    <use fill="url(#linearGradient-3)" xlink:href="#path-5"></use>
+                    <use fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

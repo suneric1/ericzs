@@ -1,0 +1,33 @@
+@keyframes particles {
+  0% {
+      opacity: 0;
+      transform: scale(0) rotate(0deg);
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: scale(3) rotate(45deg);
+  }
+}
+
+@keyframes particle-circle {
+  0% {
+      r: 7px;
+  }
+  100% {
+      r: 0px;
+  }
+}
+
+svg{
+  animation: particles 1s;
+  animation-fill-mode: forwards;
+}
+
+circle {
+  fill: #FFF500;
+  animation: particle 1s;
+  animation-fill-mode: forwards;
+}

@@ -1,0 +1,37 @@
+@keyframes particles {
+  0% {
+      opacity: 0;
+      transform: scale(0) rotate(0deg);
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: scale(3) rotate(45deg);
+  }
+}
+
+@keyframes particle-rect {
+  0% {
+      width: 10px;
+      height: 10px;
+      transform: translate(0, 0);
+  }
+  100% {
+      width: 0px;
+      height: 0px;
+      transform: translate(4px, 4px);
+  }
+}
+
+svg {
+  animation: particles 1s;
+  animation-fill-mode: forwards;
+}
+
+rect {
+  fill: #82cdff;
+  animation: particle2 1s;
+  animation-fill-mode: forwards;
+}

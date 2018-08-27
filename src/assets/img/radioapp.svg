@@ -1,0 +1,203 @@
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="256" height="256"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#45776D" stop-opacity="0.365743886" offset="0%"></stop>
+            <stop stop-color="#767745" stop-opacity="0.271484375" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="179" height="179"></rect>
+        <filter x="-13.4%" y="-13.4%" width="126.8%" height="126.8%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.245030825   0 0 0 0 0.245030825   0 0 0 0 0.245030825  0 0 0 0.482591712 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="0" y="0" width="178.139423" height="316.746094"></rect>
+        <ellipse id="path-9" cx="10.1332933" cy="10.1350143" rx="9.89663462" ry="9.89831543"></ellipse>
+        <filter x="-16.7%" y="-11.1%" width="127.8%" height="127.8%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-12" x="0" y="0" width="177.569712" height="140.728224"></rect>
+        <ellipse id="path-14" cx="8.60576923" cy="8.60723081" rx="8.60576923" ry="8.60723081"></ellipse>
+        <ellipse id="path-16" cx="8.60576923" cy="8.60723081" rx="8.60576923" ry="8.60723081"></ellipse>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-512.000000, -642.000000)">
+            <g id="Group-4-Copy-3" transform="translate(512.000000, 642.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle-2-Copy-3"></g>
+                <rect id="Rectangle-2-Copy-5" fill="url(#linearGradient-3)" mask="url(#mask-2)" x="-4" y="0" width="263" height="263"></rect>
+                <g id="Group-4-Copy-2" mask="url(#mask-2)">
+                    <g transform="translate(38.000000, 38.000000)">
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <g id="Rectangle-2-Copy-3" stroke="none" fill="none" fill-opacity="1">
+                            <use fill="black" filter="url(#filter-6)" xlink:href="#path-4"></use>
+                        </g>
+                        <g id="Group-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-5)">
+                            <g id="BG" transform="translate(0.430288, 0.000000)">
+                                <mask id="mask-8" fill="white">
+                                    <use xlink:href="#path-7"></use>
+                                </mask>
+                                <use id="screen-bg" fill="#F6F6F6" xlink:href="#path-7"></use>
+                                <g id="status-bar" mask="url(#mask-8)">
+                                    <rect id="status-bar-bg" fill="#44776D" x="4.54747351e-13" y="0" width="178.139423" height="34.8592848"></rect>
+                                    <rect id="status-bar-bg-copy" fill-opacity="0.0700000003" fill="#000000" x="4.54747351e-13" y="0" width="178.139423" height="12.828217"></rect>
+                                    <g id="status-bar-contents" transform="translate(133.389423, 2.496097)">
+                                        <g id="time" opacity="0.9" transform="translate(24.800000, 0.000000)" font-size="6.03076923" font-family="Roboto-Medium, Roboto" fill="#EDF1F3" font-weight="400">
+                                            <text id="12:30">
+                                                <tspan x="0.693389423" y="6">16:58</tspan>
+                                            </text>
+                                        </g>
+                                        <g id="battery" transform="translate(17.637885, 0.000000)">
+                                            <polygon id="bounds" points="0 0 6.89230769 0 6.89230769 6.88578465 0 6.88578465"></polygon>
+                                            <polygon id="Shape" fill="#EDF1F3" points="3.87692308 0.806927888 3.87692308 0.43036154 2.58461538 0.43036154 2.58461538 0.806927888 1.29230769 0.806927888 1.29230769 6.45542311 5.16923077 6.45542311 5.16923077 0.806927888"></polygon>
+                                        </g>
+                                        <g id="cellular" transform="translate(9.034038, 0.000000)">
+                                            <polygon id="bounds" points="0 0 6.89230769 0 6.89230769 6.88578465 0 6.88578465"></polygon>
+                                            <polygon id="Shape" fill="#EDF1F3" points="0 6.45542311 6.03076923 6.45542311 6.03076923 0.43036154"></polygon>
+                                        </g>
+                                        <g id="wifi">
+                                            <polygon id="bounds" points="0.861538462 0 7.75384615 0 7.75384615 6.88578465 0.861538462 6.88578465"></polygon>
+                                            <path d="M0.421021821,1.72830235 C1.50261745,0.913469834 2.84868344,0.43036154 4.30769231,0.43036154 C5.76670118,0.43036154 7.11276716,0.913469834 8.19436279,1.72830235 L4.30769231,6.45542311 L0.421021821,1.72830235 Z" id="Shape" fill-opacity="0.92017663" fill="#FFFFFF"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="app-bar" mask="url(#mask-8)" fill="#FFFFFF">
+                                    <g transform="translate(7.745192, 21.948439)" id="Shape">
+                                        <path d="M0.00131272977,4.84693752 L7.21669735,4.84693752 L7.21669735,4.04522812 L0.00131272977,4.04522812 L0.00131272977,4.84693752 L0.00131272977,4.84693752 Z M0.00131272977,2.84266402 L7.21669735,2.84266402 L7.21669735,2.04095461 L0.00131272977,2.04095461 L0.00131272977,2.84266402 L0.00131272977,2.84266402 Z M0.00131272977,0.0366811091 L0.00131272977,0.838390511 L7.21669735,0.838390511 L7.21669735,0.0366811091 L0.00131272977,0.0366811091 L0.00131272977,0.0366811091 Z"></path>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="Global-Display" transform="translate(0.365745, 40.389431)">
+                                <rect id="Rectangle" fill="#E8E8E8" x="37.4350962" y="0.925277312" width="76.1610577" height="10.7590385" rx="2.15384615"></rect>
+                                <g id="Group-5" transform="translate(8.605769, 4.303615)">
+                                    <mask id="mask-10" fill="white">
+                                        <use xlink:href="#path-9"></use>
+                                    </mask>
+                                    <use id="Channel-Icon" fill="#C7C7C7" xlink:href="#path-9"></use>
+                                    <g id="Group" mask="url(#mask-10)" stroke-linecap="square" stroke="#979797" stroke-width="0.5">
+                                        <g transform="translate(9.910176, 11.230508) rotate(45.000000) translate(-9.910176, -11.230508) translate(-1.589824, -1.269492)">
+                                            <path d="M0.215144231,11.8349424 L22.1640739,11.8349424" id="Line"></path>
+                                            <path d="M11.4026442,24.7457886 L11.4026442,0.279735001" id="Line-Copy"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g id="Signal" transform="translate(117.899038, 2.151808)" fill="#BEBEBE">
+                                    <path d="M6.23186241,0.228170275 L7.66588486,0.228170275 C7.75176709,0.263862346 7.80679076,0.333640159 7.85091553,0.415423656 L7.85091553,7.20712153 C7.8099286,7.29807875 7.73864942,7.35558161 7.65045558,7.39435635 L6.26271168,7.39435635 C5.95625203,7.29415113 6.06227031,6.76738668 6.06227031,6.32199717 L6.06227031,1.21542188 C6.06226102,0.802530351 5.98611725,0.294326884 6.23186241,0.228142419 L6.23186241,0.228170275 Z" id="Path"></path>
+                                    <path d="M4.62215783,7.3943842 L3.25712152,7.3943842 C2.98743406,7.33318585 3.05995724,7.00911596 3.05995724,6.65945623 L3.05995724,3.86676522 C3.05995724,3.60678135 2.99215939,2.96204922 3.0751173,2.76435005 C3.163896,2.55282532 3.70489554,2.63207398 4.03062786,2.63207398 C4.20235518,2.63207398 4.6580388,2.56280684 4.77378624,2.7202735 C4.88912521,2.87713663 4.81927569,3.49739314 4.81927569,3.80796244 L4.81927569,6.64476714 C4.81928498,7.02305295 4.89883581,7.32776333 4.62213926,7.3943842 L4.62215783,7.3943842 Z" id="Path"></path>
+                                    <path d="M1.61892569,7.3943842 L0.238636491,7.3943842 C-0.0547054846,7.32421641 0.0414536452,6.90131551 0.0414536452,6.55715258 L0.0414536452,5.20979546 C0.0414536452,5.00194765 -0.00831552787,4.68032903 0.0566137011,4.54263043 C0.140927006,4.36383581 0.600574702,4.42488559 0.936342554,4.42488559 C1.14669877,4.42488559 1.52473468,4.38031693 1.6795752,4.43798692 C1.85996408,4.50513704 1.81608997,4.82015393 1.81608997,5.09204134 L1.81608997,6.50483082 C1.81608997,6.8672112 1.90665112,7.32357574 1.61890713,7.39437492 L1.61892569,7.3943842 Z" id="Shape"></path>
+                                </g>
+                                <g id="Alert-Off" transform="translate(9.896635, 35.720008)">
+                                    <rect id="Rectangle-4" fill="#D8D8D8" x="2.58173077" y="4.88360264" width="12.4783654" height="22.0149945" rx="6.23918269"></rect>
+                                    <g id="Group-3" filter="url(#filter-11)">
+                                        <path d="M8.84242788,17.332811 C13.5299115,17.332811 17.3298678,13.5322094 17.3298678,8.84392966 C17.3298678,4.15564992 13.5299115,0.355048271 8.84242788,0.355048271 C4.15494426,0.355048271 0.354987981,4.15564992 0.354987981,8.84392966 C0.354987981,13.5322094 4.15494426,17.332811 8.84242788,17.332811 Z" id="Oval-Copy" stroke="#FFFFFF" stroke-width="1.29230769" fill="#FFFFFF"></path>
+                                        <path d="M7.55924424,5.21982543 C7.55924424,4.6379766 8.15920954,4.16628789 8.73557196,4.16628789 C9.31207869,4.16628789 9.90428326,4.63799263 9.90428326,5.21982543 L9.90428326,9.61109142 C9.90428326,10.1929403 9.20344452,10.6647092 8.62701795,10.6647092 C8.05065554,10.6647092 7.55924424,10.1929242 7.55924424,9.61109142 L7.55924424,5.21982543 L7.55924424,5.21982543 Z M8.77107248,14.0475674 C8.11952399,14.0475674 7.59126526,13.5143597 7.59126526,12.8566866 C7.59126526,12.1986927 8.11952399,11.6656453 8.77107248,11.6656453 C9.42270116,11.6656453 9.95079953,12.1986927 9.95079953,12.8566866 C9.95079953,13.5143597 9.42270116,14.0475674 8.77107248,14.0475674 L8.77107248,14.0475674 Z" id="Shape" fill="#797979"></path>
+                                    </g>
+                                </g>
+                                <g id="Secure" transform="translate(125.644231, 15.062654)" stroke="#BEBEBE" stroke-width="1.29230769">
+                                    <rect id="Rectangle-Copy" x="0.646153846" y="0.646153846" width="19.7918269" height="9.46673082" rx="2.58461538"></rect>
+                                    <g id="Group-2" transform="translate(6.454327, 3.442892)">
+                                        <ellipse id="Oval-2" cx="1.95500627" cy="1.93662693" rx="1.95500627" ry="1.93662693"></ellipse>
+                                        <path d="M4.08774038,2.36698847 L7.99775293,2.36698847" id="Line" stroke-linecap="square"></path>
+                                        <path d="M6.66947115,1.93662693 L6.66947115,0.880284969" id="Line" stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                                <g id="Zone" transform="translate(82.615385, 15.062654)">
+                                    <text id="ZONE-A" font-family="Roboto-Medium, Roboto" font-size="6.89230769" font-weight="400" line-spacing="10.3384615" fill-opacity="0.87" fill="#000000">
+                                        <tspan x="9.56796875" y="7.29108462">ZONE A</tspan>
+                                    </text>
+                                    <rect id="Rectangle" fill="#D8D8D8" x="3.50685096" y="0.0645542311" width="35.6332632" height="10.7590385" rx="2.15384615"></rect>
+                                </g>
+                                <g id="Channel" transform="translate(37.435096, 15.062654)">
+                                    <text id="Channel-13" font-family="Roboto-Medium, Roboto" font-size="6.89230769" font-weight="400" line-spacing="10.3384615" fill-opacity="0.87" fill="#000000">
+                                        <tspan x="5.45066106" y="7.29108462">Channel 13</tspan>
+                                    </text>
+                                    <rect id="Rectangle" fill="#D8D8D8" x="0" y="0.0645542311" width="45.5944411" height="10.7590385" rx="2.15384615"></rect>
+                                </g>
+                                <g id="Display-BG" transform="translate(37.435096, 35.289646)">
+                                    <rect id="Rectangle-Copy-2" fill="#E7E7E7" x="0" y="0" width="109.157635" height="26.6824155" rx="2.15384615"></rect>
+                                    <path d="M0.00468762063,18.5421914 L108.833672,18.192928" id="Path-2" stroke="#D8D8D8" stroke-width="0.5"></path>
+                                </g>
+                                <g id="Media-Buttons" transform="translate(14.629808, 71.009654)">
+                                    <path d="M9.9242662,6.09473682 C9.9242662,5.3181418 9.71325676,4.606665 9.29123788,3.96030641 L3.80499243,9.40853048 C4.4695509,9.83782835 5.18989347,10.0524773 5.96602014,10.0524773 C6.50445803,10.0524773 7.01742925,9.9475646 7.50493382,9.73773924 C7.99243839,9.52791388 8.41324457,9.24694083 8.76735237,8.89482011 C9.12146017,8.54269939 9.40280609,8.12184277 9.61139013,7.63225025 C9.81997418,7.14265774 9.9242662,6.63015326 9.9242662,6.09473682 L9.9242662,6.09473682 Z M2.65535479,8.25810866 L8.14887642,2.80264923 C7.49401954,2.36370422 6.76640078,2.14423172 5.96602014,2.14423172 C5.24810297,2.14423172 4.5859699,2.32029208 3.97962093,2.6724128 C3.37327196,3.02453353 2.89304358,3.5044789 2.53893579,4.11224891 C2.18482799,4.72001893 2.00777409,5.38084823 2.00777409,6.09473682 C2.00777409,6.87615541 2.22363432,7.59727936 2.65535479,8.25810866 L2.65535479,8.25810866 Z M11.5541322,6.09473682 C11.5541322,6.85203756 11.4061831,7.57557329 11.1102848,8.26534402 C10.8143865,8.95511475 10.4178343,9.54841405 9.9206281,10.0452419 C9.42342195,10.5420698 8.82919996,10.9376027 8.13796214,11.2318405 C7.44672432,11.5260784 6.72274365,11.6731973 5.96602014,11.6731973 C5.20929663,11.6731973 4.48531597,11.5260784 3.79407815,11.2318405 C3.10284032,10.9376027 2.50861834,10.5420698 2.01141218,10.0452419 C1.51420603,9.54841405 1.11765381,8.95511475 0.821755512,8.26534402 C0.525857216,7.57557329 0.377908069,6.85203756 0.377908069,6.09473682 C0.377908069,5.33743609 0.525857216,4.61510625 0.821755512,3.9277473 C1.11765381,3.24038835 1.51420603,2.64829494 2.01141218,2.15146707 C2.50861834,1.6546392 3.10284032,1.25910634 3.79407815,0.964868471 C4.48531597,0.670630607 5.20929663,0.523511674 5.96602014,0.523511674 C6.72274365,0.523511674 7.44672432,0.670630607 8.13796214,0.964868471 C8.82919996,1.25910634 9.42342195,1.6546392 9.9206281,2.15146707 C10.4178343,2.64829494 10.8143865,3.24038835 11.1102848,3.9277473 C11.4061831,4.61510625 11.5541322,5.33743609 11.5541322,6.09473682 L11.5541322,6.09473682 Z" id="Shape" fill="#404040" opacity="0.3"></path>
+                                    <path d="M145.958678,4.45933047 L142.661635,4.45933047 L142.661635,1.07077801 C142.661635,0.900657269 142.527431,0.762727781 142.361904,0.762727781 L140.563517,0.762727781 C140.39799,0.762727781 140.263785,0.900657269 140.263785,1.07077801 L140.263785,4.45933047 L136.966742,4.45933047 C136.801216,4.45933047 136.667011,4.59725996 136.667011,4.7673807 L136.667011,6.61568205 C136.667011,6.78580278 136.801216,6.92373227 136.966742,6.92373227 L140.263785,6.92373227 L140.263785,10.3122847 C140.263785,10.4824055 140.39799,10.620335 140.563517,10.620335 L142.361904,10.620335 C142.527431,10.620335 142.661635,10.4824055 142.661635,10.3122847 L142.661635,6.92373227 L145.958678,6.92373227 C146.124205,6.92373227 146.25841,6.78580278 146.25841,6.61568205 L146.25841,4.7673807 C146.25841,4.59725996 146.124205,4.45933047 145.958678,4.45933047 L145.958678,4.45933047 Z" id="Shape" fill="#000000"></path>
+                                    <path d="M103.721947,10.1958809 C103.443286,10.0458074 103.269231,9.75595122 103.269231,9.43951058 L103.269231,2.57900888 C103.269231,2.26256823 103.444144,1.97185447 103.722804,1.82263856 C104.001465,1.67342265 104.339287,1.6905739 104.602514,1.8655167 L109.747017,5.29576755 C109.985379,5.45527422 110.128568,5.72197622 110.128568,6.00925973 C110.128568,6.29568568 109.985379,6.56324524 109.746159,6.72275191 L104.601657,10.1530028 C104.339287,10.3288031 104.000608,10.3450968 103.721947,10.1958809 L103.721947,10.1958809 Z M110.985985,10.2970733 C110.511833,10.2970733 110.128568,9.91374276 110.128568,9.43951058 L110.128568,6.00925973 L110.128568,2.57900888 C110.128568,2.10477669 110.511833,1.72144616 110.985985,1.72144616 L112.700819,1.72144616 C113.17497,1.72144616 113.558236,2.10477669 113.558236,2.57900888 L113.558236,9.43951058 C113.558236,9.91374276 113.17497,10.2970733 112.700819,10.2970733 L110.985985,10.2970733 L110.985985,10.2970733 Z" id="Shape" fill="#000000"></path>
+                                    <path d="M35.7363701,10.1958809 C35.4577095,10.0458074 35.2836538,9.75595122 35.2836538,9.43951058 L35.2836538,2.57900888 C35.2836538,2.26256823 35.4585669,1.97185447 35.7372275,1.82263856 C36.015888,1.67342265 36.3537104,1.6905739 36.6169374,1.8655167 L41.76144,5.29576755 C41.9998019,5.45527422 42.1429906,5.72197622 42.1429906,6.00925973 C42.1429906,6.29568568 41.9998019,6.56324524 41.7605826,6.72275191 L36.61608,10.1530028 C36.3537104,10.3288031 36.0150306,10.3450968 35.7363701,10.1958809 L35.7363701,10.1958809 Z M43.0004077,10.2970733 C42.526256,10.2970733 42.1429906,9.91374276 42.1429906,9.43951058 L42.1429906,6.00925973 L42.1429906,2.57900888 C42.1429906,2.10477669 42.526256,1.72144616 43.0004077,1.72144616 L44.7152419,1.72144616 C45.1893935,1.72144616 45.572659,2.10477669 45.572659,2.57900888 L45.572659,9.43951058 C45.572659,9.91374276 45.1893935,10.2970733 44.7152419,10.2970733 L43.0004077,10.2970733 L43.0004077,10.2970733 Z" id="Shape-Copy" fill="#000000" transform="translate(40.428156, 6.009389) scale(-1, 1) translate(-40.428156, -6.009389) "></path>
+                                    <g id="Scanning" opacity="0.3" transform="translate(68.415865, 0.000000)">
+                                        <g id="Group-8">
+                                            <ellipse id="Oval-4" fill="#404040" cx="6.02403846" cy="6.02506157" rx="6.02403846" ry="6.02506157"></ellipse>
+                                            <ellipse id="Oval-5" stroke="#FAFAFA" stroke-width="1.29230769" cx="6.02403846" cy="6.02506157" rx="3.44230769" ry="3.44289232"></ellipse>
+                                            <ellipse id="Oval-5-Copy" fill="#FAFAFA" cx="6.02403846" cy="6.02506157" rx="1.07572115" ry="1.07590385"></ellipse>
+                                            <path d="M6.30372596,5.87443503 L10.6066106,1.14045808" id="Line" stroke="#FAFAFA" stroke-width="1.29230769" stroke-linecap="square"></path>
+                                        </g>
+                                        <ellipse id="Oval-5-Copy-2" fill="#FAFAFA" cx="8.60576923" cy="8.17686927" rx="1.72115385" ry="1.72144616"></ellipse>
+                                    </g>
+                                </g>
+                                <path d="M0.0645432692,91.1182971 L178.203966,91.1182971" id="Line" stroke-opacity="0.12" stroke="#000000" stroke-width="0.5"></path>
+                            </g>
+                            <g id="Functional-Area" transform="translate(1.000000, 131.690631)">
+                                <g id="Home">
+                                    <mask id="mask-13" fill="white">
+                                        <use xlink:href="#path-12"></use>
+                                    </mask>
+                                    <use id="Mask" fill="#F5F5F5" xlink:href="#path-12"></use>
+                                    <g id="Logs" mask="url(#mask-13)">
+                                        <g transform="translate(7.175481, -19.366269)">
+                                            <g id="Log">
+                                                <text id="Alex-Nelson" font-family="Roboto-Regular, Roboto" font-size="6.03076923" font-weight="normal" line-spacing="10.3384615" fill-opacity="0.87" fill="#000000">
+                                                    <tspan x="22.2330458" y="6.13739657">Alex Nelson</tspan>
+                                                </text>
+                                                <text id="16:52" font-family="Roboto-Regular, Roboto" font-size="6.03076923" font-weight="normal" line-spacing="10.3384615" fill-opacity="0.87" fill="#000000">
+                                                    <tspan x="88.1883687" y="6">16:52</tspan>
+                                                </text>
+                                                <ellipse id="Oval" fill-opacity="0.54" fill="#7F7F7F" cx="8.60576923" cy="13.3412078" rx="8.60576923" ry="8.60723081"></ellipse>
+                                                <rect id="Rectangle-3" fill="#FFFFFF" x="22.324628" y="7.85450386" width="81.0502103" height="16.0295997" rx="2.15384615"></rect>
+                                                <image id="Sound-Icon" x="91.8583819" y="11.4773411" width="7.78448348" height="7.78580557" xlink:href="data:image/png;base64,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"></image>
+                                                <text id="00:36" font-family="Roboto-Regular, Roboto" font-size="6.03076923" font-weight="normal" line-spacing="10.3384615" fill-opacity="0.87" fill="#818181">
+                                                    <tspan x="26.3771385" y="17.9353297">00:36</tspan>
+                                                </text>
+                                            </g>
+                                            <g id="Log-Copy" transform="translate(0.000000, 30.986031)">
+                                                <rect id="Rectangle-5" fill="#E8E8E8" x="77.0216346" y="0" width="15.0600962" height="6.45542311" rx="2.15384615"></rect>
+                                                <rect id="Rectangle-5-Copy" fill="#E8E8E8" x="22.375" y="0" width="15.0600962" height="6.45542311" rx="2.15384615"></rect>
+                                                <g id="Group-7" transform="translate(0.000000, 4.733977)">
+                                                    <mask id="mask-15" fill="white">
+                                                        <use xlink:href="#path-14"></use>
+                                                    </mask>
+                                                    <use id="Oval" fill="#C7C7C7" xlink:href="#path-14"></use>
+                                                </g>
+                                                <rect id="Rectangle-3" fill="#E9E9E9" x="22.324628" y="7.85450386" width="69.5337539" height="16.0295997" rx="2.15384615"></rect>
+                                            </g>
+                                            <g id="Log-Copy-2" transform="translate(72.288462, 63.263146)">
+                                                <rect id="Rectangle-5-Copy" fill="#E8E8E8" x="0.430288462" y="0" width="15.0600962" height="6.45542311" rx="2.15384615"></rect>
+                                                <rect id="Rectangle-5-Copy-2" fill="#E8E8E8" x="32.2716346" y="0" width="34.1095566" height="6.45542311" rx="2.15384615"></rect>
+                                                <g id="Group-9" transform="translate(71.858173, 4.303615)">
+                                                    <mask id="mask-17" fill="white">
+                                                        <use xlink:href="#path-16"></use>
+                                                    </mask>
+                                                    <use id="Oval" fill="#C7C7C7" xlink:href="#path-16"></use>
+                                                </g>
+                                                <rect id="Rectangle-3" fill="#E8E8E8" x="0.379916451" y="7.85450386" width="66.3147951" height="16.0295997" rx="2.15384615"></rect>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
