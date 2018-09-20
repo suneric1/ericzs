@@ -1,0 +1,13 @@
+<div class="project-info">
+  <div class="thumbnail-container">
+    <div class="thumbnail" [style.background-image]="bgUrl"></div>
+  </div>
+  <ul>
+    <h6>ROLE</h6>
+    <li>{{project.info.role}}</li>
+    <h6>CONTEXT</h6>
+    <li>{{project.info.context}}</li>
+    <h6>SKILLS CONTRIBUTED</h6>
+    <li *ngFor="let skill of project.info.skills">{{skill}}</li>
+  </ul>
+</div>

@@ -2,11 +2,22 @@
   font-family: 'Montserrat', sans-serif;
   padding: 2rem 0;
   font-weight: 500;
-  background: #fbfbfb;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 100;
+  transition: all .5s;
+  will-change: background, padding;
+
+  &.shrink {
+    background: #f9f9f9;
+    padding: 1rem 0;
+
+    &:after {
+      display: block;
+      content: '';
+    }
+  }
 }
 
 .navbar-brand {

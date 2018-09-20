@@ -1,3 +1,30 @@
-<p>
-  project works!
-</p>
+<div class="project-wrapper">
+  <app-project-info [project]="project"></app-project-info>
+  <div class="container-fluid col-sm-offset-4 col-sm-8 col-md-offset-4 col-md-7 col-lg-offset-5 col-lg-5 col-xs-12" id="project">
+    <div class="col-xs-12 project-desc">
+      <h3>{{project.title}}
+        <span class="badge">in progress</span>
+      </h3>
+      <p>{{project.mainRole}}</p>
+      <div class="line"></div>
+      <ng-container *ngFor="let elem of project.body">
+        <h4 *ngIf="elem.type === 'heading'">{{elem.content}}</h4>
+
+        <p *ngIf="elem.type === 'para'">{{elem.content}}</p>
+
+        <div class="row" *ngIf="elem.type === 'image'">
+          <div class="col-12 col-md-offset-1 col-md-10">
+            <img class="col-12" [src]="elem.src" alt="">
+            <p class="col-12 caption">{{elem.caption}}</p>
+          </div>
+        </div>
+      </ng-container>
+      <div class="back">
+        <a routerLink="/"><img src="/assets/img/back-btn.svg" alt=""><span>BACK TO WORK</span></a>
+      </div>
+      <div class="next">
+        <a [routerLink]="nextLink"><img src="/assets/img/next-btn.svg" alt=""><span>NEXT PROJECT</span></a>
+      </div>
+    </div>
+  </div>
+</div>

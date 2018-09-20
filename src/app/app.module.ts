@@ -12,6 +12,7 @@ import { ParticlesRectComponent } from './particles-rect/particles-rect.componen
 import { FireParticlesDirective } from './shared/fireParticles.directive';
 import { ProjectComponent } from './project/project.component';
 import { ThumbnailComponent } from './thumbnail/thumbnail.component';
+import { ProjectInfoComponent } from './project/project-info/project-info.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ThumbnailComponent } from './thumbnail/thumbnail.component';
     ParticlesRectComponent,
     FireParticlesDirective,
     ProjectComponent,
-    ThumbnailComponent
+    ThumbnailComponent,
+    ProjectInfoComponent
   ],
   entryComponents: [ParticlesRectComponent, ParticlesCircleComponent],
   imports: [
