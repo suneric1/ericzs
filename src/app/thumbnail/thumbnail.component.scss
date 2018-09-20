@@ -1,0 +1,21 @@
+.thumbnail-container {
+  width: 100%;
+  overflow: hidden;
+  transition: all ease 1s;
+  cursor: pointer;
+}
+
+.thumbnail {
+  background-size: cover;
+  padding-bottom: 100%;
+  transform: scale(1.01);
+  transition: all .7s;
+
+  &.size-2 {
+    padding-bottom: 50%;
+  }
+}
+
+.thumbnail-container:hover .thumbnail {
+  transform: scale(1.1);
+}

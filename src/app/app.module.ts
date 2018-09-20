@@ -9,6 +9,9 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ParticlesCircleComponent } from './particles-circle/particles-circle.component';
 import { ParticlesRectComponent } from './particles-rect/particles-rect.component';
+import { FireParticlesDirective } from './shared/fireParticles.directive';
+import { ProjectComponent } from './project/project.component';
+import { ThumbnailComponent } from './thumbnail/thumbnail.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +21,12 @@ import { ParticlesRectComponent } from './particles-rect/particles-rect.componen
     ContactComponent,
     FooterComponent,
     ParticlesCircleComponent,
-    ParticlesRectComponent
+    ParticlesRectComponent,
+    FireParticlesDirective,
+    ProjectComponent,
+    ThumbnailComponent
   ],
+  entryComponents: [ParticlesRectComponent, ParticlesCircleComponent],
   imports: [
     BrowserModule,
     AppRoutingModule
