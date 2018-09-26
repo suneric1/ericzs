@@ -1,4 +1,4 @@
-const project = {
+export const PLAN_SETUP = {
   name: '401k-plan-setup',
   badge: 'in progress',
   thumbnail: '401k-plan-setup.svg',
@@ -98,5 +98,3 @@ const project = {
     }
   ]
 };
-
-export default project;

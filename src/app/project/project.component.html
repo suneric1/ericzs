@@ -9,13 +9,13 @@
       <ng-container *ngFor="let elem of project.body">
         <h4 *ngIf="elem.type === 'heading'">{{elem.content}}</h4>
 
+        <h6 *ngIf="elem.type === 'h6'">{{elem.content}}</h6>
+
         <p class="paragraph" *ngIf="elem.type === 'para'">{{elem.content}}</p>
 
         <div class="image-wrapper" *ngIf="elem.type === 'image'">
-          <div class="col-12 col-md-10 mx-auto">
-            <img class="col-12" [src]="elem.src" alt="">
-            <p class="caption">{{elem.caption}}</p>
-          </div>
+          <img [src]="elem.src">
+          <p class="caption">{{elem.caption}}</p>
         </div>
 
         <div class="video-wrapper" *ngIf="elem.type === 'youtube'">
@@ -23,6 +23,20 @@
             <iframe [src]="elem.src" frameborder="0" allowfullscreen></iframe>
           </div>
           <p class="col-xs-12 caption">Walkthrough Video</p>
+        </div>
+
+        <div class="ext-link" *ngIf="elem.type === 'ext-link'">
+          <a [href]="elem.src" target="_blank">
+            <i class="fas fa-external-link-square-alt"></i>
+            {{elem.text}}
+          </a>
+        </div>
+
+        <div class="quote" *ngIf="elem.type === 'quote'">
+          <i class="fas fa-quote-left"></i>
+          <p>{{elem.quote}}</p>
+          <p class="text-right"><a [href]="elem.by[1]" target="_blank">–– {{elem.by[0]}}</a></p>
+          <i class="fas fa-quote-right"></i>
         </div>
       </ng-container>
     </div>

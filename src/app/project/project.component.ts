@@ -24,13 +24,13 @@ export class ProjectComponent implements OnInit {
         if (elem.type === 'youtube')
           elem.src = this.sanitizer.bypassSecurityTrustResourceUrl(elem.src);
       });
-      this.title = this.project.name.replace('-', ' ').toUpperCase();
+      this.title = this.project.name.split('-').join(' ').toUpperCase();
 
       const pi = projects.findIndex(({ name }) => name === this.project.name);
       const next =
         pi < projects.length - 1 ? projects[pi + 1].name : projects[0].name;
       this.nextLink = ['/projects', next];
-      this.nextName = next.replace('-', ' ').toUpperCase();
+      this.nextName = next.split('-').join(' ').toUpperCase();
     });
   }
 

@@ -1,4 +1,4 @@
-export const ALTORIA = {
+export const EAT_GREEN_STAY_COOL = {
   name: 'altoria',
   thumbnail: 'altoria.svg',
   size: 1,

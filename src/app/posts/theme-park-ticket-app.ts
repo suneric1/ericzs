@@ -1,4 +1,4 @@
-export const ALTORIA = {
+export const THEME_PARK_TICKET_APP = {
   name: 'altoria',
   thumbnail: 'altoria.svg',
   size: 1,

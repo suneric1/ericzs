@@ -1,4 +1,4 @@
-export const ALTORIA = {
+export const TRIANGO = {
   name: 'altoria',
   thumbnail: 'altoria.svg',
   size: 1,

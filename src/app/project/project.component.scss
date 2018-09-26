@@ -18,6 +18,11 @@ app-project-info {
     font-weight: 800;
   }
 
+  h6 {
+    font-weight: bold;
+    margin-bottom: .25rem;
+  }
+
   .badge {
     font-size: 0.9rem;
     margin-left: 0.75rem;
@@ -33,6 +38,7 @@ app-project-info {
   h4 {
     font-weight: bold;
     padding-top: 1.5rem;
+    margin-bottom: 1rem;
     text-transform: uppercase;
   }
 
@@ -40,6 +46,11 @@ app-project-info {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+
+    img {
+      max-height: 300px;
+      max-width: calc(100% - 30px);
+    }
 
     .caption {
       font-style: italic;
@@ -49,8 +60,8 @@ app-project-info {
   }
 
   .paragraph {
-    margin-bottom: 1.5rem;
-    text-align: justify;
+    margin-bottom: 1.25rem;
+    line-height: 1.4;
   }
 
   .video {
@@ -67,6 +78,48 @@ app-project-info {
       margin: 0;
       top: 0;
       left: 0;
+    }
+  }
+
+  .ext-link {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.25rem;
+    border-top: solid 1px #f6f6f6;
+    border-bottom: solid 1px #f6f6f6;
+    padding: 1rem 0;
+    margin: 1rem auto;
+
+    a {
+      text-decoration: none;
+      padding-bottom: .35rem;
+      transition: all .3s;
+
+      &:hover {
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .quote {
+    font-weight: 300;
+    font-style: italic;
+    padding: 0 3rem 0 4rem;
+    position: relative;
+
+    .fas {
+      font-size: 1.5rem;
+      position: absolute;
+    }
+
+    .fa-quote-left {
+      left: 1rem;
+      top: 0;
+    }
+
+    .fa-quote-right {
+      right: .5rem;
+      bottom: 0;
     }
   }
 
