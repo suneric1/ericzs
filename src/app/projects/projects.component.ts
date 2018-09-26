@@ -41,12 +41,12 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       d.targetOpacity = 1;
       d.targetBlur = 0;
     } else if (y < 100) {
-      d.targetOffsetY = y / 2;
+      d.targetOffsetY = - y / 2;
       d.targetScale = 1;
       d.targetOpacity = 1;
       d.targetBlur = 0;
     } else if (y < 400) {
-      d.targetOffsetY = y / 2;
+      d.targetOffsetY = - y / 2;
       d.targetScale = 1 - (y - 100) / 800;
       d.targetOpacity = 1 - (y - 100) / 200;
       d.targetBlur = (y - 100) / 40;

@@ -1,13 +1,16 @@
-.container {
-  margin-top: 6.5rem;
+.intro-container {
+  position: fixed;
+  width: 100%;
+  padding: 6rem 0;
+  left: 0;
 }
 
 .intro {
-  margin: 15% auto;
+  margin: 0 auto;
   padding: 0 2rem;
   font-style: italic;
   max-width: 600px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   animation: message-anim 1s;
   transition: transform 0.1s;
 
@@ -42,6 +45,10 @@
   .develop:before {
     background-color: #82cdff;
   }
+}
+
+.projects {
+  margin-top: 25rem;
 }
 
 app-thumbnail {

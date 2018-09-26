@@ -1,3 +1,9 @@
+.project-info {
+  position: fixed;
+  position: sticky;
+  top: 9rem;
+}
+
 .thumbnail-container {
   width: 100%;
   overflow: hidden;
@@ -7,4 +13,22 @@
   background-size: cover;
   padding-bottom: 100%;
   transform: scale(1.01);
+}
+
+ul {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  font-size: .9rem;
+
+  h6 {
+    font-weight: 800;
+    font-size: .8rem;
+    margin: 1.5rem 0 0;
+    line-height: 1.5;
+  }
+
+  li {
+    font-weight: 300;
+    list-style: none;
+  }
 }

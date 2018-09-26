@@ -12,7 +12,7 @@ export class ThumbnailComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.bgUrl = `url('/assets/img/${this.project.name}.${this.project.type}')`;
+    this.bgUrl = `url('/assets/img/thumbnail/${this.project.thumbnail}')`;
   }
 
 }
