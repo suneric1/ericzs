@@ -13,8 +13,8 @@
 
         <p class="paragraph" *ngIf="elem.type === 'para'">{{elem.content}}</p>
 
-        <div class="image-wrapper" *ngIf="elem.type === 'image'">
-          <img [src]="elem.src">
+        <div class="image-wrapper" *ngIf="elem.type.startsWith('image')">
+          <img [class.xl]="elem.type === 'image-xl'" [src]="elem.src">
           <p class="caption">{{elem.caption}}</p>
         </div>
 
@@ -22,7 +22,7 @@
           <div class="video">
             <iframe [src]="elem.src" frameborder="0" allowfullscreen></iframe>
           </div>
-          <p class="col-xs-12 caption">Walkthrough Video</p>
+          <p class="col-xs-12 caption">{{elem.caption}}</p>
         </div>
 
         <div class="ext-link" *ngIf="elem.type === 'ext-link'">

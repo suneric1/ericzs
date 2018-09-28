@@ -19,11 +19,14 @@ export class ProjectComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe(({ id }) => {
-      this.project = projects.find(({ name }) => name === id);
-      this.project.body.forEach(elem => {
-        if (elem.type === 'youtube')
-          elem.src = this.sanitizer.bypassSecurityTrustResourceUrl(elem.src);
-      });
+      this.project = projects.filter(({ name }) => name === id).map(project => {
+        const body = (<any[]>project.body).map(elem => {
+          const src = elem.type === 'youtube' ? this.sanitizer.bypassSecurityTrustResourceUrl(elem.src) : elem.src;
+          return { ...elem, src };
+        });
+        return { ...project, body };
+      })[0];
+      
       this.title = this.project.name.split('-').join(' ').toUpperCase();
 
       const pi = projects.findIndex(({ name }) => name === this.project.name);
@@ -32,9 +35,5 @@ export class ProjectComponent implements OnInit {
       this.nextLink = ['/projects', next];
       this.nextName = next.split('-').join(' ').toUpperCase();
     });
-  }
-
-  onActivate() {
-    console.log('activate');
   }
 }

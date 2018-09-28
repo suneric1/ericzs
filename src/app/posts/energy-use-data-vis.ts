@@ -5,7 +5,7 @@ export const ENERGY_USE = {
   info: {
     role: 'REPORTER + DEVELOPER',
     context: 'SCHOOL PROJECT',
-    skills: ['D3.js', 'HTML', 'JavaScript', 'CSS'],
+    skills: ['D3.js', 'Data Visualization', 'HTML', 'JavaScript', 'CSS'],
     link: ['Check it out!', 'http://suneric1.github.io/energy-use-data-viz']
   },
   category: 'INTERACTIVE DATA VISUALIZATION',

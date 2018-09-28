@@ -1,14 +1,16 @@
+@import '../../bootstrap-exports';
+
 .navbar {
   background-color: white;
   font-family: 'Montserrat', sans-serif;
-  padding: 2rem 0;
-  font-size: .85rem;
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
   font-weight: 500;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 100;
-  transition: all .5s;
+  transition: all 0.5s;
   will-change: background, padding;
 
   &.shrink {
@@ -62,6 +64,11 @@
 
   a {
     position: relative;
+
+    @include media-breakpoint-down(sm) {
+      padding: 2rem 0;
+      text-align: center;
+    }
   }
 
   a:after {
@@ -76,8 +83,25 @@
     transition: all ease 0.3s;
   }
 
-  a:hover:after, a.active:after {
+  a:hover:after,
+  a.active:after {
     width: calc(100% - 1rem);
-    left: .5rem;
+    left: 0.5rem;
+  }
+}
+
+.navbar-toggler {
+  color: #363636;
+  border-color: transparent;
+
+  .fas {
+    font-size: 1.75rem;
+    &:before {
+      content: '\f00d';
+    }
+  }
+
+  &.collapsed .fas:before {
+    content: '\f0c9';
   }
 }

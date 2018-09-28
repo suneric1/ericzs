@@ -50,6 +50,10 @@ app-project-info {
     img {
       max-height: 300px;
       max-width: calc(100% - 30px);
+
+      &.xl {
+        max-height: initial;
+      }
     }
 
     .caption {
@@ -126,6 +130,7 @@ app-project-info {
   .footer {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     margin-top: 6rem;
 
     a {

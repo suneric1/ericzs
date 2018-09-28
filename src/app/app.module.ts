@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -31,6 +32,7 @@ import { ProjectInfoComponent } from './project/project-info/project-info.compon
   entryComponents: [ParticlesRectComponent, ParticlesCircleComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],

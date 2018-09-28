@@ -1,60 +1,64 @@
 export const TRIANGO = {
-  name: 'altoria',
-  thumbnail: 'altoria.svg',
+  name: 'triango',
+  thumbnail: 'triango.svg',
   size: 1,
   info: {
-    role: 'UX + DEVELOPER',
+    role: 'DESIGNER + DEVELOPER',
     context: 'SCHOOL PROJECT',
-    skills: ['Creativity', 'Unity (C#)', 'Photoshop', 'Illustrator', 'Maya']
+    skills: ['Creativity', 'Unity (C#)', 'Photoshop', 'Illustrator', 'After Effects', 'Premiere'],
+    link: {
+      'Try it out!': '/triango'
+    }
   },
-  category: 'VR GAME DESIGN + DEV',
+  category: 'GAME DESIGN + DEV',
   body: [
     { type: 'heading', content: 'Intro' },
     {
       type: 'para',
-      content: `Altoria is a VR adventure + puzzle game for Oculus Rift. The goal of the player is to pass each level by defeating mobs and solving puzzles to proceed further into the fallen city of Altoria.`
-    },
-    {
-      type: 'para',
-      content: `Our demo begins with Tato, the player, one of the last few remaining Altorians in the world. After tragedy strikes his family he must follow a Macilent soldier to the old city of Altoria. Along for the journey is Alma, the trapped spirit of Tato’s grandmother. Alma guides him as he tries to enter the fallen city.      `
-    },
-    {
-      type: 'para',
-      content: `Along the way he uncovers the mystery surrounding this Macilent stranger, his family, and the jinn Alma herself.`
+      content: `TrianGo is a puzzle platformer game I designed using simple mechanics such as colors and shapes. It’s about a triangle, Trian, who wants to become a circle so that he can roll smoothly. In each level, the player needs to get though the destination, a portal, by transforming itself into different shapes and colors to defeat enemies and move across obstacles.`
     },
     {
       type: 'youtube',
-      src: 'https://www.youtube.com/embed/a2C0x7ZOsyg',
-      caption: 'Walkthrough Video'
+      src: 'https://www.youtube.com/embed/QZbEUmopGaI',
+      caption: 'Game Trailer'
+    },
+    {
+      type: 'para',
+      content: `You can press A and D to move, SPACE to jump. Press A and D with S being held, you will be rolling instead of moving. There’re some interactible objects in the environment. By pressing E you can let Trian interact with them, such as turn on a switch.`
+    },
+    {
+      type: 'para',
+      content: `The game is still a prototype, and I do hope I'll have time to finish it.`
+    },
+    {
+      type: 'image',
+      src: '/assets/img/tg-2.png',
+      caption: 'Level 2'
+    },
+    {
+      type: 'ext-link',
+      src: '/triango',
+      text: 'Try it out'
     },
     { type: 'heading', content: 'The Ask' },
     {
       type: 'para',
-      content: `Collaborate with a game designer to build a VR game (demo) in a semester.`
+      content: `Design creative game mechanics and build a prototype.`
     },
     { type: 'heading', content: 'The Answer' },
     {
       type: 'para',
-      content: `This was the first time I developed a VR game, which was a very time-consuming project and it's been a great learning experience. 
-      While my teammate Pablo designed and modeled most of the assets for the game, I focused mostly on the UX, development, as well as composition.`
+      content: `My inspiration was from my “5 in 5” project, for which 
+      I built 5 games in 5 days with the constraints of only using colors 
+      and shapes for the graphics. From that project, I found the unlimited 
+      possibilities of the most basic elements, which led to the concept of TrianGo.`
     },
     {
       type: 'para',
-      content: `Starting with brainstorming, we spent a lot of time on ideation. Originally we wanted to make it a multiplayer game where the VR player can play with a mobile player. 
-      However, our storytelling doesn't fit the multiplayer gameplay very well, so we pivoted and focused on refining the VR experience.`
-    },
-    {
-      type: 'para',
-      content: `When it comes to implementation, we encountered so many UX problems due to the lack of references out there.
-      For example, we don’t want the player to teleport through spots, so we kept the traditional movement, 
-      while the player can flip the camera with the controller. In this case, the player is always faced with the sensors. 
-      This can reduce the motion sickness (not as good as teleporting), and is less disorienting.`
-    },
-    {
-      type: 'para',
-      content: `Due to the nature of VR, every single interaction design requires us to be innovative. 
-      Also, being immersive drastically increases the workload of making a game, especially in terms of coding. 
-      As of now, this is more of a prototype rather than a complete game, but what's important is the process of learning.`
-    },
+      content: `I drew all the 2D assets on a tablet, tweaked them in Photoshop, 
+      and created a video prototype with After Effects and Premiere as a proof of 
+      concept. The implementation was done with Unity and C#. While there were only 
+      2 weeks for it, I managed to build 2 levels by the end of the semester.`
+    }
   ]
 };
