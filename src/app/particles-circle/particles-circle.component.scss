@@ -24,6 +24,8 @@
 svg{
   animation: particles 1s;
   animation-fill-mode: forwards;
+  position: fixed;
+  pointer-events: none;
 }
 
 circle {

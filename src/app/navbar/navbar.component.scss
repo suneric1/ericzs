@@ -10,17 +10,26 @@
   position: fixed;
   top: 0;
   z-index: 100;
+  align-items: flex-start;
   transition: all 0.5s;
   will-change: background, padding;
 
   &.shrink {
     background-color: #f9f9f9;
-    padding: 1rem 0;
+    padding: 1rem;
 
     &:after {
       display: block;
       content: '';
     }
+  }
+}
+
+.navbar-nav {
+  @include media-breakpoint-down(sm) {
+    height: 95vh;
+    justify-content: space-around;
+    padding: 4rem 2rem;
   }
 }
 
@@ -93,6 +102,10 @@
 .navbar-toggler {
   color: #363636;
   border-color: transparent;
+  transition: all .2s;
+  &[aria-expanded=true] {
+    transform: rotate(-90deg);
+  }
 
   .fas {
     font-size: 1.75rem;
