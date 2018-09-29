@@ -1,9 +1,3 @@
-.footer {
-  font-family: "Montserrat", sans-serif;
-  padding: 3rem 0;
-  text-align: center;
-}
-
 .links {
   text-align: center;
 }
@@ -19,7 +13,7 @@
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -.3rem;
+    bottom: -0.3rem;
     width: 0;
     height: 2px;
     background: #3a3a3a;
@@ -30,13 +24,13 @@
 
   &:hover {
     .fab {
-      transform: translateY(-.4rem);
+      transform: translateY(-0.4rem);
     }
 
     &:after {
       width: 50%;
       left: 25%;
-      bottom: -.5rem;
+      bottom: -0.5rem;
     }
   }
 }
@@ -45,8 +39,4 @@
   color: #363636;
   font-size: 24px;
   transition: all 0.3s;
-}
-
-.copyright {
-  margin-top: 2rem;
 }

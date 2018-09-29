@@ -5,9 +5,9 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectComponent } from './project/project.component';
 
 const routes: Routes = [
-  { path: '', component: ProjectsComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'projects/:id', component: ProjectComponent },
+  { path: '', component: ProjectsComponent, data: { state: 'home' } },
+  { path: 'contact', component: ContactComponent, data: { state: 'contact' } },
+  { path: 'projects/:id', component: ProjectComponent, data: { state: 'project' } },
 ];
 
 @NgModule({

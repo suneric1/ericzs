@@ -14,6 +14,7 @@ import { FireParticlesDirective } from './shared/fireParticles.directive';
 import { ProjectComponent } from './project/project.component';
 import { ThumbnailComponent } from './thumbnail/thumbnail.component';
 import { ProjectInfoComponent } from './project/project-info/project-info.component';
+import { SocialLinksComponent } from './social-links/social-links.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ProjectInfoComponent } from './project/project-info/project-info.compon
     FireParticlesDirective,
     ProjectComponent,
     ThumbnailComponent,
-    ProjectInfoComponent
+    ProjectInfoComponent,
+    SocialLinksComponent
   ],
   entryComponents: [ParticlesRectComponent, ParticlesCircleComponent],
   imports: [

@@ -6,7 +6,7 @@
   padding: 2rem 1rem;
   font-size: 0.85rem;
   font-weight: 500;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   z-index: 100;
@@ -49,6 +49,10 @@
   position: relative;
   display: inline-block;
   transition: all 0.3s;
+
+  &.shifted {
+    transform: translateY(-2rem);
+  }
 
   .en {
     position: absolute;
@@ -94,16 +98,18 @@
 
   a:hover:after,
   a.active:after {
-    width: calc(100% - 1rem);
-    left: 0.5rem;
+    @include media-breakpoint-up(sm) {
+      width: calc(100% - 1rem);
+      left: 0.5rem;
+    }
   }
 }
 
 .navbar-toggler {
   color: #363636;
   border-color: transparent;
-  transition: all .2s;
-  &[aria-expanded=true] {
+  transition: all 0.2s;
+  &:not(.collapsed) {
     transform: rotate(-90deg);
   }
 
@@ -116,5 +122,11 @@
 
   &.collapsed .fas:before {
     content: '\f0c9';
+  }
+}
+
+.navbar-collapse.d-md-none {
+  @include media-breakpoint-up(sm) {
+    display: none !important;
   }
 }
