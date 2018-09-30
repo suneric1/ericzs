@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light" [class.shrink]="shrinkNav">
+<nav class="navbar navbar-expand-md navbar-light" [class.shrink]="shrinkNav" @fadeDown>
   <div class="container-fluid">
     <div class="logo d-none d-md-block">
       <object data="assets/img/logo.svg" type="image/svg+xml"></object>
@@ -17,7 +17,7 @@
   <div class="navbar-collapse collapse">
     <ng-container *ngTemplateOutlet="navList"></ng-container>
   </div>
-  <div class="navbar-collapse" @expand *ngIf="showMenu">
+  <div class="navbar-collapse d-md-none" @expand *ngIf="showMenu">
     <ng-container *ngTemplateOutlet="navList"></ng-container>
   </div>
 </nav>
@@ -28,10 +28,10 @@
       <a class="nav-link" [class.active]="workActive" [routerLink]="['/']" (click)="showMenu = false">WORK</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#" (click)="showMenu = false">RESUME</a>
+      <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active" (click)="showMenu = false">CONTACT</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active" (click)="showMenu = false">CONTACT</a>
+      <a class="nav-link" href="/assets/Zhiming_Sun_Resume.pdf" target="_blank">RESUME<i class="fas fa-arrow-alt-circle-down d-inline ml-1"></i></a>
     </li>
   </ul>
 </ng-template>

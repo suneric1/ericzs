@@ -1,5 +1,5 @@
 <div class="intro-container">
-  <p class="intro text-center text-sm-left" [ngStyle]="msgStyle">Hi. My name is Zhiming Sun. I’m a
+  <p class="intro text-center text-sm-left" [ngStyle]="msgStyle" @fadeUp>Hi. My name is Zhiming Sun. I’m a
     <span class="design" fireParticles="circle">designer</span>
     &
     <span class="develop" fireParticles="rect">developer</span>
@@ -7,7 +7,7 @@
     myself to
     engaging and functional designs that leverage creative technologies to expand the possibility of the real world.</p>
 </div>
-<div class="row projects">
+<div class="projects" @fadeUp>
   <app-thumbnail *ngFor="let project of projects" [project]="project" [ngClass]="'size-'+project.size"></app-thumbnail>
 </div>
 <app-footer></app-footer>

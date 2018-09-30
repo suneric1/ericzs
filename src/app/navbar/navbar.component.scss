@@ -130,3 +130,9 @@
     display: none !important;
   }
 }
+
+.nav-link.active {
+  @include media-breakpoint-down(sm) {
+    font-weight: 900;
+  }
+}

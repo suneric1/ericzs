@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
-import { trigger, transition, style, animate, state, query, group, stagger } from '@angular/animations';
+import { trigger, transition, style, animate, state, query, group, stagger, useAnimation } from '@angular/animations';
+import { fadeDown } from '../shared/fade-down.animation';
 
 @Component({
   selector: 'app-navbar',
@@ -35,7 +36,8 @@ import { trigger, transition, style, animate, state, query, group, stagger } fro
           ])
         ])
       ])
-    ])
+    ]),
+    trigger('fadeDown', [transition(':enter', [useAnimation(fadeDown)])])
   ]
 })
 export class NavbarComponent implements OnInit {
