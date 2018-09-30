@@ -36,11 +36,33 @@ const ANIM_TIMING = '500ms cubic-bezier(.83,.01,.17,1)';
             animate(ANIM_TIMING, style({ transform: 'translateX(100%)', opacity: 0 }))
           ], { optional: true })
         ])
+      ]),
+      transition('* => project', [
+        query(':enter, :leave', style({ position: 'absolute', width: '100%', left: '0' }), { optional: true }),
+        query(':enter', style({ transform: 'translateY(180px)', opacity: 0 }), { optional: true }),
+        query(':leave', [
+          style({ transform: 'scale(1)', opacity: 1 }),
+          animate('200ms ease-in', style({ transform: 'scale(.8)', opacity: 0 }))
+        ], { optional: true }),
+        query(':enter', [
+          animate('400ms ease-out', style({ transform: 'translateY(0)', opacity: 1 }))
+        ], { optional: true })
+      ]),
+      transition('project => *', [
+        query(':enter, :leave', style({ position: 'absolute', width: '100%', left: '0' }), { optional: true }),
+        query(':enter', style({ transform: 'scale(.8)', opacity: 0 }), { optional: true }),
+        query(':leave', [
+          style({ opacity: 1 }),
+          animate('200ms ease-in', style({ transform: 'translateY(180px)', opacity: 0 }))
+        ], { optional: true }),
+        query(':enter', [
+          animate('400ms ease-out', style({ transform: 'scale(1)', opacity: 1 }))
+        ], { optional: true })
       ])
     ])
   ]
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'ericzs';
   routerState;
   @ViewChild(RouterOutlet) outlet: RouterOutlet;
@@ -48,12 +70,12 @@ export class AppComponent implements OnInit {
   constructor(router: Router) {
     router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe(e => {
       this.routerState = this.outlet.activatedRouteData.state;
-      console.log(this.routerState);
+      
+      window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+      });
     });
   }
-
-  ngOnInit() {
-    
-  }
-
 }
