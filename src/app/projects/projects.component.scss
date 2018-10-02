@@ -5,6 +5,7 @@
   padding: 6rem 0;
   left: 0;
   right: 0;
+  z-index: -1;
 }
 
 .intro {
@@ -53,6 +54,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 25rem;
+  background: #fff;
 }
 
 app-thumbnail {

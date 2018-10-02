@@ -3,6 +3,29 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500');
 @import './bootstrap-exports';
 
+@font-face {
+  font-family: 'flow-circular';
+  src: url('assets/fonts/flow-circular.woff');
+}
+
+@keyframes color-breathing {
+  from {
+    color: #f9f9f9;
+  }
+  to {
+    color: #f0f0f0;
+  }
+}
+
+@keyframes bg-breathing {
+  from {
+    background: #f9f9f9;
+  }
+  to {
+    background: #f0f0f0;
+  }
+}
+
 body {
   font-family: 'Lato', sans-serif;
   color: #363636;

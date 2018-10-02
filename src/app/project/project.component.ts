@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { projects } from '../shared/projects';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -14,6 +14,7 @@ export class ProjectComponent implements OnInit {
   projects = projects;
   nextLink;
   nextName;
+  loaded = true;
 
   constructor(private route: ActivatedRoute, private sanitizer: DomSanitizer) {}
 
@@ -26,6 +27,13 @@ export class ProjectComponent implements OnInit {
         });
         return { ...project, body };
       })[0];
+
+      if (this.project.body.find(({ type }) => type === 'youtube')) {
+        this.loaded = false;
+        setTimeout(() => {
+          this.loaded = true;
+        }, 2000);
+      }
       
       this.title = this.project.name.split('-').join(' ').toUpperCase();
 
@@ -35,5 +43,11 @@ export class ProjectComponent implements OnInit {
       this.nextLink = ['/projects', next];
       this.nextName = next.split('-').join(' ').toUpperCase();
     });
+  }
+
+  load(src) {
+    if (src) {
+      this.loaded = true;
+    }
   }
 }

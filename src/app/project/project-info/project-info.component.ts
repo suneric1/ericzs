@@ -7,6 +7,7 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
 })
 export class ProjectInfoComponent implements OnChanges {
   @Input() project;
+  @Input() loading;
   bgUrl;
 
   constructor() { }

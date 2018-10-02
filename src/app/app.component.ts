@@ -2,6 +2,9 @@ import { Component, ViewChild, OnInit } from '@angular/core';
 import { trigger, transition, style, animate, query, group } from '@angular/animations';
 import { Router, NavigationEnd, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
 
 const ANIM_TIMING = '500ms cubic-bezier(.83,.01,.17,1)';
 
@@ -64,18 +67,25 @@ const ANIM_TIMING = '500ms cubic-bezier(.83,.01,.17,1)';
 })
 export class AppComponent {
   title = 'ericzs';
+  prevState;
   routerState;
   @ViewChild(RouterOutlet) outlet: RouterOutlet;
 
   constructor(router: Router) {
     router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe(e => {
+      this.prevState = this.routerState;
       this.routerState = this.outlet.activatedRouteData.state;
       
-      window.scroll({
-        top: 0, 
-        left: 0, 
-        behavior: 'smooth' 
-      });
+      if (this.prevState === this.routerState) {
+        window.scroll({ top: 0, left: 0 });
+      } else {
+        window.scroll({
+          top: 0, 
+          left: 0, 
+          behavior: 'smooth' 
+        });
+      }
+      
     });
   }
 }

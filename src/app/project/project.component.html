@@ -1,8 +1,8 @@
-<div class="project-wrapper">
-  <app-project-info class="d-none d-md-block col-12 col-md-3 mr-5" [project]="project"></app-project-info>
+<div class="project-wrapper" [class.loading]="!loaded">
+  <app-project-info class="d-none d-md-block col-12 col-md-3 mr-5" [project]="project" [loading]="!loaded"></app-project-info>
   <div class="content">
     <h2 class="title">{{title}}
-      <span class="badge badge-primary" *ngIf="project.badge">{{project.badge}}</span>
+      <span class="badge" *ngIf="project.badge">{{project.badge}}</span>
     </h2>
     <p class="category">{{project.category}}</p>
     <div class="content__main">
@@ -20,7 +20,7 @@
 
         <div class="video-wrapper" *ngIf="elem.type === 'youtube'">
           <div class="video">
-            <iframe [src]="elem.src" frameborder="0" allowfullscreen></iframe>
+            <iframe [src]="elem.src" frameborder="0" allowfullscreen (load)="load(ifr.src)" #ifr></iframe>
           </div>
           <p class="col-xs-12 caption">{{elem.caption}}</p>
         </div>

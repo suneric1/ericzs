@@ -1,6 +1,30 @@
+@import '../../bootstrap-exports';
+
 .project-wrapper {
   display: flex;
   margin-top: 2.5rem;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 1rem;
+  }
+
+  &.loading {
+    * {
+      font-family: 'flow-circular' !important;
+      color: #f0f0f0 !important;
+      font-size: 24px;
+      line-height: .8 !important;
+      border: none !important;
+      animation: 1s color-breathing infinite alternate;
+    }
+    img, iframe {
+      display: none;
+    }
+    .video {
+      background: #f0f0f0 !important;
+      animation: 1s bg-breathing infinite alternate;
+    }
+  }
 }
 
 app-project-info {
@@ -10,6 +34,10 @@ app-project-info {
 
 .content {
   padding: 0 15px;
+
+  @include media-breakpoint-down(sm) {
+    padding: 0 2rem;
+  }
 
   .title {
     display: flex;
@@ -26,6 +54,18 @@ app-project-info {
   .badge {
     font-size: 0.9rem;
     margin-left: 0.75rem;
+    color: #fff;
+    background-color: #008eff;
+
+    @include media-breakpoint-down(xs) {
+      display: block;
+      width: 100%;
+      margin-top: .25rem;
+      margin-left: 0;
+      padding: .5rem;
+      color: #008eff;
+      background-color: #ecf7ff;
+    }
   }
 
   .category {
