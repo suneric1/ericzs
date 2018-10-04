@@ -24,7 +24,7 @@ export const POLICE_RADIO_APP = {
     },
     {
       type: 'image',
-      src: '/assets/img/ra-screenshots.jpg',
+      src: './assets/img/ra-screenshots.jpg',
       caption: 'Screenshots'
     },
     { type: 'h6', content: 'Scan Lists' },
@@ -48,7 +48,7 @@ export const POLICE_RADIO_APP = {
     },
     {
       type: 'image',
-      src: '/assets/img/ra-dark-mode.jpg',
+      src: './assets/img/ra-dark-mode.jpg',
       caption: 'Dark mode'
     },
     {

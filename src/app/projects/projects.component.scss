@@ -5,7 +5,7 @@
   padding: 6rem 0;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 .intro {
@@ -53,6 +53,8 @@
 .projects {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
   margin-top: 25rem;
   background: #fff;
 }

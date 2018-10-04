@@ -32,7 +32,7 @@ export class ProjectComponent implements OnInit {
         this.loaded = false;
         setTimeout(() => {
           this.loaded = true;
-        }, 2000);
+        }, 5000);
       }
       
       this.title = this.project.name.split('-').join(' ').toUpperCase();

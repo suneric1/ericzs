@@ -25,12 +25,12 @@ export const THE_COLORING_BOOK = {
     },
     {
       type: 'image',
-      src: '/assets/img/tcb-1.png',
+      src: './assets/img/tcb-1.png',
       caption: 'Destop version'
     },
     {
       type: 'image',
-      src: '/assets/img/tcb-mobile.jpg',
+      src: './assets/img/tcb-mobile.jpg',
       caption: 'Mobile version'
     },
     {

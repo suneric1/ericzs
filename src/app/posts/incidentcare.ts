@@ -33,7 +33,7 @@ export const INCIDENTCARE = {
     },
     {
       type: 'image',
-      src: '/assets/img/ic-1.png',
+      src: './assets/img/ic-1.png',
       caption: 'Reports Overview'
     },
     {
@@ -62,7 +62,7 @@ export const INCIDENTCARE = {
     },
     {
       type: 'image',
-      src: '/assets/img/ic-2.png',
+      src: './assets/img/ic-2.png',
       caption: 'OSHA Form'
     },
     {

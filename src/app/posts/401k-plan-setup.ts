@@ -27,7 +27,7 @@ export const PLAN_SETUP = {
     },
     {
       type: 'image',
-      src: '/assets/img/plan-setup-contribution.gif',
+      src: './assets/img/plan-setup-contribution.gif',
       caption: 'Angular implementation with mock data'
     },
     { type: 'heading', content: 'The Ask' },
@@ -53,7 +53,7 @@ export const PLAN_SETUP = {
     },
     {
       type: 'image',
-      src: '/assets/img/plan-setup-mind-map.png',
+      src: './assets/img/plan-setup-mind-map.png',
       caption: 'Mind mapping (disregard my terrible handwriting)'
     },
     {
@@ -68,7 +68,7 @@ export const PLAN_SETUP = {
     },
     {
       type: 'image',
-      src: '/assets/img/plan-setup-user-flow.png',
+      src: './assets/img/plan-setup-user-flow.png',
       caption: 'User flow'
     },
     {
@@ -86,7 +86,7 @@ export const PLAN_SETUP = {
     },
     {
       type: 'image',
-      src: '/assets/img/plan-setup-hi-fi-design.png',
+      src: './assets/img/plan-setup-hi-fi-design.png',
       caption: 'High Fidelity Design'
     },
     {

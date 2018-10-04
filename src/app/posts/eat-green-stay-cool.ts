@@ -16,7 +16,7 @@ export const EAT_GREEN_STAY_COOL = {
     },
     {
       type: 'image-xl',
-      src: '/assets/img/eg-1.png',
+      src: './assets/img/eg-1.png',
       caption: 'Report'
     }
   ]

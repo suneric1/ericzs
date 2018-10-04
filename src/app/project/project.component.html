@@ -41,9 +41,12 @@
       </ng-container>
     </div>
     <div class="footer">
-      <a routerLink="/"><img class="prev" src="/assets/img/back-btn.svg" alt=""><span>BACK TO WORK</span></a>
-      <a [routerLink]="nextLink"><img class="next" src="/assets/img/next-btn.svg" alt=""><span>NEXT PROJECT:
-          {{nextName}}</span></a>
+      <a routerLink="/" class="footer__btn back"><i class="fas fa-arrow-left mr-1"></i>ALL</a>
+      <a [routerLink]="nextLink" class="footer__btn next">
+        <p>NEXT PROJECT</p>
+        <p class="next-name">{{nextName}}</p>
+        <i class="fas fa-caret-right"></i>
+      </a>
     </div>
   </div>
 </div>

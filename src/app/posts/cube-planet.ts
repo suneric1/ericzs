@@ -38,7 +38,7 @@ export const CUBE_PLANET = {
     },
     {
       type: 'image',
-      src: '/assets/img/cube-planet.jpg',
+      src: './assets/img/cube-planet.jpg',
       caption: 'Screenshots'
     },
   ]

@@ -25,7 +25,7 @@ export const ENERGY_USE = {
     },
     {
       type: 'image',
-      src: '/assets/img/eu-1.png',
+      src: './assets/img/eu-1.png',
       caption: 'Scatter Plot & Barchart'
     },
     {
@@ -36,7 +36,7 @@ export const ENERGY_USE = {
     },
     {
       type: 'image',
-      src: '/assets/img/eu-2.png',
+      src: './assets/img/eu-2.png',
       caption: 'Connected Scatter Plot'
     },
     {

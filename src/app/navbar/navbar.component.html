@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light" [class.shrink]="shrinkNav" @fadeDown>
   <div class="container-fluid">
     <div class="logo d-none d-md-block">
-      <object data="assets/img/logo.svg" type="image/svg+xml"></object>
+      <object data="./assets/img/logo.svg" type="image/svg+xml"></object>
     </div>
     <a class="navbar-brand" routerLink="/">
       <span class="first-name" [class.shifted]="showMenu">
@@ -31,7 +31,7 @@
       <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active" (click)="showMenu = false">CONTACT</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/assets/Zhiming_Sun_Resume.pdf" target="_blank">RESUME<i class="fas fa-arrow-alt-circle-down d-inline ml-1"></i></a>
+      <a class="nav-link" href="./assets/Zhiming_Sun_Resume.pdf" target="_blank">RESUME<i class="fas fa-arrow-alt-circle-down d-inline ml-1"></i></a>
     </li>
   </ul>
 </ng-template>

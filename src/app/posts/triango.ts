@@ -32,7 +32,7 @@ export const TRIANGO = {
     },
     {
       type: 'image',
-      src: '/assets/img/tg-2.png',
+      src: './assets/img/tg-2.png',
       caption: 'Level 2'
     },
     {

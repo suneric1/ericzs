@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Lato:300i,400,400i,700,700i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100:200,300,400,500');
 @import './bootstrap-exports';
 
 @font-face {
   font-family: 'flow-circular';
-  src: url('assets/fonts/flow-circular.woff');
+  src: url('./assets/fonts/flow-circular.woff');
 }
 
 @keyframes color-breathing {

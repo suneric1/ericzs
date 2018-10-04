@@ -13,7 +13,7 @@ export class ProjectInfoComponent implements OnChanges {
   constructor() { }
 
   ngOnChanges() {
-    this.bgUrl = `url('/assets/img/thumbnail/${this.project.thumbnail}')`;
+    this.bgUrl = `url('./assets/img/thumbnail/${this.project.thumbnail}')`;
   }
 
 }
