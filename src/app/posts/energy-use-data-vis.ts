@@ -9,6 +9,7 @@ export const ENERGY_USE = {
     link: ['Check it out!', 'http://suneric1.github.io/energy-use-data-viz']
   },
   category: 'INTERACTIVE DATA VISUALIZATION',
+  tags: ['data vis', 'front end'],
   body: [
     { type: 'heading', content: 'Intro' },
     {

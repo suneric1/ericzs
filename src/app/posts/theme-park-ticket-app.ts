@@ -8,6 +8,7 @@ export const THEME_PARK_TICKET_APP = {
     skills: ['UI / UX Design', 'Sketch', 'Flinto']
   },
   category: 'PROTOTYPE',
+  tags: ['mobile', 'ux'],
   body: [
     { type: 'heading', content: 'Intro' },
     {

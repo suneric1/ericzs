@@ -8,6 +8,7 @@ export const EAT_GREEN_STAY_COOL = {
     skills: ['Data Visualization', 'Illustrator']
   },
   category: 'DATA VISUALIZATION',
+  tags: ['data vis', 'infographics'],
   body: [
     { type: 'heading', content: 'Intro' },
     {

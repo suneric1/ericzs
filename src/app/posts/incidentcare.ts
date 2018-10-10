@@ -12,6 +12,7 @@ export const INCIDENTCARE = {
     }
   },
   category: 'PROTOTYPE',
+  tags: ['ux'],
   body: [
     { type: 'heading', content: 'Intro' },
     {

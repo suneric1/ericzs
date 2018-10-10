@@ -8,6 +8,7 @@ export const MELTING = {
     skills: ['openFrameworks', 'C++']
   },
   category: 'INTERACTIVE INSTALLATION',
+  tags: ['experience'],
   body: [
     { type: 'heading', content: 'Intro' },
     {
