@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { projects } from '../shared/projects';
 import { trigger, useAnimation, transition } from '@angular/animations';
 import { fadeUp } from '../shared/fade-up.animation';
+import { ProjectService } from '../shared/project.service';
 
 @Component({
   selector: 'app-projects',
@@ -12,7 +12,7 @@ import { fadeUp } from '../shared/fade-up.animation';
   ]
 })
 export class ProjectsComponent implements OnInit, OnDestroy {
-  projects = projects;
+  projects;
   styleData: any = {
     targetOffsetY: 0,
     offsetY: 0,
@@ -26,9 +26,10 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   msgStyle: any = {};
   willAnimate: boolean;
 
-  constructor() {}
+  constructor(private projectService: ProjectService) {}
 
   ngOnInit() {
+    this.projects = this.projectService.getProjects();
     this.willAnimate = true;
     requestAnimationFrame(this.update.bind(this));
   }

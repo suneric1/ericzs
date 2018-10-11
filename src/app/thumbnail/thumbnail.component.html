@@ -1,10 +1,11 @@
 <div [routerLink]="['/projects', project.name]" class="thumbnail-container" >
   <div class="thumbnail" [style.background-image]="bgUrl" [ngClass]="'size-' + project.size"></div>
   <div class="info">
-    <h6>{{title}}</h6>
+    <h6>{{project.title}}</h6>
     <div class="icons">
-      <span *ngFor="let icon of icons" class="icon-wrapper" [ngClass]="icon.bg">
-        <i [ngClass]="icon.fa"></i>
+      <span *ngFor="let tag of project.tags" class="icon-wrapper" [ngClass]="tag.bg">
+        <i [ngClass]="tag.fa" *ngIf="tag.fa"></i>
+        <img [src]="tag.img" *ngIf="tag.img">
       </span>
     </div>
   </div>

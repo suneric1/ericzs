@@ -1,7 +1,7 @@
 <div class="project-wrapper" [class.loading]="!loaded">
   <app-project-info class="d-none d-md-block col-12 col-md-3 mr-5" [project]="project" [loading]="!loaded"></app-project-info>
   <div class="content">
-    <h2 class="title">{{title}}
+    <h2 class="title">{{project.title}}
       <span class="badge" *ngIf="project.badge">{{project.badge}}</span>
     </h2>
     <p class="category">{{project.category}}</p>
@@ -41,7 +41,17 @@
       </ng-container>
     </div>
     <div class="footer">
-      <a routerLink="/" class="footer__btn back"><i class="fas fa-arrow-left mr-1"></i>ALL</a>
+      <div ngbDropdown placement="top-left" (openChange)="dropdownOn = $event">
+        <a class="footer__btn list" ngbDropdownToggle><i class="fas fa-th-list mr-1"></i>ALL</a>
+        <div ngbDropdownMenu [@fade]="dropdownOn">
+          <button class="dropdown-item" [routerLink]="['/projects', p.name]" *ngFor="let p of projects">
+            <h6>{{p.title}}</h6>
+            <div>
+              <span class="tag" *ngFor="let tag of p.tags" [ngClass]="tag.bg">{{tag.name}}</span>
+            </div>
+          </button>
+        </div>
+      </div>
       <a [routerLink]="nextLink" class="footer__btn next">
         <h6>NEXT PROJECT</h6>
         <p class="next-name">{{nextName}}</p>
