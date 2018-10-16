@@ -32,6 +32,18 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     this.projects = this.projectService.getProjects();
     this.willAnimate = true;
     requestAnimationFrame(this.update.bind(this));
+
+    let timer;
+    window.addEventListener('scroll', () => {
+      if (this.willAnimate === false) {
+        requestAnimationFrame(this.update.bind(this));
+      }
+      this.willAnimate = true;
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        this.willAnimate = false;
+      }, 2000);
+    });
   }
 
   ngOnDestroy() {
