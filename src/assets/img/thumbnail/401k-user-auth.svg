@@ -1,0 +1,50 @@
+<svg width="513px" height="513px" viewBox="0 0 513 513" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M86.9710245,83 L426.889988,83 C431.51041,83 435.256001,86.7455916 435.256001,91.3660131 L435.256001,420.986928 C435.256001,425.60735 431.51041,429.352941 426.889988,429.352941 L86.9710245,429.352941 C82.3506031,429.352941 78.6050114,425.60735 78.6050114,420.986928 L78.6050114,91.3660131 C78.6050114,86.7455916 82.3506031,83 86.9710245,83 Z" id="path-1"></path>
+        <filter x="-6.4%" y="-4.6%" width="112.9%" height="113.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.700015944   0 0 0 0 0.700015944   0 0 0 0 0.700015944  0 0 0 0.304545969 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter2"></feMorphology>
+            <feOffset dx="0" dy="7" in="shadowSpreadOuter2" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.786724065   0 0 0 0 0.786724065   0 0 0 0 0.786724065  0 0 0 0.271767437 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logos/401k-user-auth" transform="translate(1.000000, 1.000000)">
+            <g id="group" transform="translate(-0.254902, -0.176471)">
+                <rect id="Rectangle" fill="#9DB8CF" x="0" y="0" width="512" height="512"></rect>
+                <g id="Rectangle-2-Copy-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <rect id="Rectangle" fill="#ECF7FF" x="195.183007" y="362.424837" width="123.816993" height="25.0980392" rx="4.18300654"></rect>
+                <rect id="Rectangle" fill="#E9E9E9" x="187.653595" y="108.098039" width="138.039216" height="15.8954248" rx="6.69281046"></rect>
+                <g id="lastname" transform="translate(167.575163, 214.346405)">
+                    <g id="Group" transform="translate(0.000000, 53.101572)">
+                        <path d="M4.21505927,12.9478184 L175.664906,12.9478184 C177.975117,12.9478184 179.847913,14.8206142 179.847913,17.1308249 L179.847913,30.4537008 C179.847913,32.7639115 177.975117,34.6367073 175.664906,34.6367073 L4.21505927,34.6367073 C1.90484856,34.6367073 0.0320527379,32.7639115 0.0320527379,30.4537008 L0.0320527379,17.1308249 C0.0320527379,14.8206142 1.90484856,12.9478184 4.21505927,12.9478184 Z" id="box" fill="#F9F9F9"></path>
+                        <rect id="Rectangle" fill="#E9E9E9" x="0" y="0" width="54.1691271" height="6.89630807" rx="3.44815404"></rect>
+                    </g>
+                    <g id="Group-Copy">
+                        <path d="M4.21505927,12.9478184 L175.664906,12.9478184 C177.975117,12.9478184 179.847913,14.8206142 179.847913,17.1308249 L179.847913,30.4537008 C179.847913,32.7639115 177.975117,34.6367073 175.664906,34.6367073 L4.21505927,34.6367073 C1.90484856,34.6367073 0.0320527379,32.7639115 0.0320527379,30.4537008 L0.0320527379,17.1308249 C0.0320527379,14.8206142 1.90484856,12.9478184 4.21505927,12.9478184 Z" id="box" fill="#F9F9F9"></path>
+                        <rect id="Rectangle" fill="#E9E9E9" x="0" y="0" width="54.1691271" height="6.89630807" rx="3.44815404"></rect>
+                    </g>
+                    <rect id="Rectangle-Copy-4" fill="#ECF7FF" x="113.894062" y="97.2379438" width="65.9752189" height="4.82741565" rx="2.41370783"></rect>
+                </g>
+                <g id="Group-2" transform="translate(115.666667, 154.947712)">
+                    <rect id="Rectangle" fill="#DFE9F6" x="13.3856209" y="0" width="54.379085" height="10.875817" rx="5.4379085"></rect>
+                    <rect id="Rectangle-Copy-3" fill="#DFE9F6" x="0" y="0" width="10.875817" height="10.875817" rx="5.4379085"></rect>
+                    <rect id="Rectangle-Copy" fill="#E9E9E9" x="120.509804" y="0" width="54.379085" height="10.875817" rx="5.4379085"></rect>
+                    <rect id="Rectangle-Copy-5" fill="#E9E9E9" x="107.124183" y="0" width="10.875817" height="10.875817" rx="5.4379085"></rect>
+                    <rect id="Rectangle-Copy-2" fill="#E9E9E9" x="227.633987" y="0" width="54.379085" height="10.875817" rx="5.4379085"></rect>
+                    <rect id="Rectangle-Copy-6" fill="#E9E9E9" x="214.248366" y="0" width="10.875817" height="10.875817" rx="5.4379085"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
