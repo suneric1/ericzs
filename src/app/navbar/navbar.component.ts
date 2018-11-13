@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs/operators';
-import { trigger, transition, style, animate, state, query, group, stagger, useAnimation } from '@angular/animations';
+import { filter, throttleTime } from 'rxjs/operators';
+import { trigger, transition, style, animate, query, group, stagger, useAnimation } from '@angular/animations';
 import { fadeDown } from '../shared/fade-down.animation';
+import { BehaviorSubject } from 'rxjs';
+import { async } from 'rxjs/internal/scheduler/async';
 
 @Component({
   selector: 'app-navbar',
@@ -40,21 +42,39 @@ import { fadeDown } from '../shared/fade-down.animation';
     trigger('fadeDown', [transition(':enter', [useAnimation(fadeDown)])])
   ]
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
   showMenu: boolean = false;
-  shrinkNav: boolean = false;
   workActive: boolean;
+  inProject: boolean;
+  navClass: string = '';
+  prevScrollY: number = 0;
+  offsetY: BehaviorSubject<number> = new BehaviorSubject(0);
 
   constructor(router: Router) {
     router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe(e => {
-      this.workActive = e['url'] === '/' || e['url'].startsWith('/projects');
+      this.inProject = e['url'].startsWith('/projects');
+      this.workActive = e['url'] === '/' || this.inProject;
+      this.navClass = '';
     });
+    this.offsetY
+      .pipe(
+        filter(val => Math.abs(val) > 2),
+        throttleTime(300, async, { trailing: true })
+      )
+      .subscribe(val => {
+        if (window.scrollY <= 100) {
+          this.navClass = '';
+        } else if (this.inProject) {
+          this.navClass = val > 0 ? 'hidden' : 'shrinked';
+        } else {
+          this.navClass = 'shrinked';
+        }
+      });
   }
 
-  ngOnInit() {}
-
   onScroll() {
-    this.shrinkNav = window.scrollY > 100;
+    this.offsetY.next(window.scrollY - this.prevScrollY);
+    this.prevScrollY = window.scrollY;
   }
 
   toggleMenu() {

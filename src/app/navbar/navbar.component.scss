@@ -14,7 +14,7 @@
   transition: all 0.5s;
   will-change: background, padding;
 
-  &.shrink {
+  &.shrinked {
     background-color: #f9f9f9;
     padding: 1rem;
 
@@ -22,6 +22,11 @@
       display: block;
       content: '';
     }
+  }
+
+  &.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
   }
 }
 

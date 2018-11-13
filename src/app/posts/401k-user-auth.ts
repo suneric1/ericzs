@@ -7,10 +7,10 @@ export const USER_AUTH = {
     context: 'WORK PROJECT',
     skills: [
       'AngularJS',
+      'UX / UI Design',
       'HTML',
       'CSS / Sass',
       'Gulp',
-      'UX / UI Design',
       'Sketch'
     ]
   },
@@ -20,7 +20,7 @@ export const USER_AUTH = {
     { type: 'heading', content: 'Intro' },
     {
       type: 'para',
-      content: 'This project is a complete revamp for the user authentication experience on <a href="https://www.slavic401k.com/account/sign-in/participant" target="_blank">slavic401k.com</a>. The original design had very limited functionalities and was so confusing that it caused a lot of phone calls to customer service, which is unacceptable. As a result of this project, the number of calls regarding user account dramatically reduced, which lowered the total volume of calls by over 50%.'
+      content: 'This project is a complete revamp for the user authentication experience on <a href="https://www.slavic401k.com/account/sign-in/participant" target="_blank">slavic401k.com</a>. The original design had very limited functionalities and was so confusing that it caused a lot of phone calls for customer service, which was unacceptable. As a result of this project, the number of calls regarding user account dramatically reduced, which lowered the total volume of calls by over 50%.'
     },
     {
       type: 'para',
@@ -34,11 +34,11 @@ export const USER_AUTH = {
     { type: 'heading', content: 'The Ask' },
     {
       type: 'para',
-      content: 'Historically, Slavic401k has been creating temporary username and password for all new users (participants) enrolled in our 401(k) plan. As a new user, you go to the site, use the temporary credentials to log in, and then you will be prompted to enter a new password. Since there\'s no clear instruction on the site and this heavily relies on the communication with the users in advance (which sometimes are not reliable in our case), the new users often don\'t know what to do. In addition, the reset password functionality has been a big issue as well.'
+      content: 'Historically, Slavic401k has been creating temporary usernames and passwords for all new users (participants) enrolled in our 401(k) plan. As a new user, you go to the site, use the temporary credentials to log in, and then you will be prompted to enter a new password. Since there\'s no clear instruction on the site and this heavily relies on the communication with the users in advance (which sometimes are not reliable in our case), the new users often don\'t know what to do. In addition, the reset password functionality has been a big issue as well.'
     },
     {
       type: 'para',
-      content: 'As the UX designer and front-end developer for this project, I need to design and implement a solution for login, sign up, and password reset, which should handle all the exceptions (we have A LOT!). The front end was done with AngularJS (1.6), consuming APIs built by the backend team.'
+      content: 'As the UX designer and front-end developer for this project, I need to design and implement a solution for login, sign up, and password reset, which should handle all the exceptions (we have A LOT). The front end was done with AngularJS (1.6), consuming APIs built by the backend team.'
     },
     { type: 'heading', content: 'The Answer' },
     {
@@ -52,7 +52,7 @@ export const USER_AUTH = {
     },
     {
       type: 'para',
-      content: 'The main reason why such a simple problem becomes tricky here is because of how the industry works. We have participants coming from other plans, we have new participants, and we have people that are no longer employed, etc. We don\'t always have enough / correct information to verify the users, meaning we need to deal with a lot of exceptions. Therefore, I had to come up with a solid user flow before starting the design.'
+      content: 'The main reason why such a simple problem becomes tricky here is because of how the industry works. We have participants coming from other plans, we have new participants, and we have people that are no longer employed, etc. We don\'t always have enough / correct information to verify the users, meaning we need to deal with a lot of exceptions. Therefore, I had to come up with a thought through user flow before starting the design.'
     },
     {
       type: 'image',
@@ -70,7 +70,7 @@ export const USER_AUTH = {
     },
     {
       type: 'para',
-      content: 'One of the exceptions is that sometimes we don\'t have the user\'s contact information except for an address that\'s probably no longer valid. In this case we\'d need to collect some identification documents before they can move on.'
+      content: 'One of the exceptions is that sometimes we don\'t have the user\'s contact information except for an address that\'s probably no longer valid. In this case, we\'d need to collect some identification documents before they can move on.'
     },
     {
       type: 'image',
