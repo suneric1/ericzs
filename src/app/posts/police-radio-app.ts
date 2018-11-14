@@ -12,6 +12,7 @@ export const POLICE_RADIO_APP = {
     }
   },
   category: 'PROTOTYPE',
+  time: 'Oct 2016',
   tags: ['mobile', 'ux'],
   body: [
     { type: 'heading', content: 'Intro' },

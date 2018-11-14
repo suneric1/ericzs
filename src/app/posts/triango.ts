@@ -11,6 +11,7 @@ export const TRIANGO = {
     }
   },
   category: 'GAME DESIGN + DEV',
+  time: 'Dec 2015',
   tags: ['game dev'],
   body: [
     { type: 'heading', content: 'Intro' },

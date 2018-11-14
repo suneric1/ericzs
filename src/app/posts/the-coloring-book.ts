@@ -9,6 +9,7 @@ export const THE_COLORING_BOOK = {
     link: ['Try it out!', 'http://thecoloringbook.herokuapp.com']
   },
   category: 'WEB DESIGN + FULL STACK DEV',
+  time: 'May 2017',
   tags: ['front end', 'back end'],
   body: [ 
     { type: 'heading', content: 'Intro' },

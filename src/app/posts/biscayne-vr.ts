@@ -8,6 +8,7 @@ export const BISCAYNE_VR = {
     skills: ['VR Developing','Unity (C#)', 'Photoshop', 'Illustrator']
   },
   category: 'VR EXPERIENCE',
+  time: 'May 2017',
   tags: ['vr', 'experience'],
   body: [
     { type: 'heading', content: 'Intro' },

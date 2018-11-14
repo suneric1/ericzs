@@ -16,6 +16,7 @@ export const PLAN_SETUP = {
     ]
   },
   category: 'UX/UI DESIGN + FRONT-END DEV',
+  time: 'Oct 2018',
   tags: ['ux', 'front end', 'angular'],
   body: [
     { type: 'heading', content: 'Intro' },

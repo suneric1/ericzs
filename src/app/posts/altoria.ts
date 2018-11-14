@@ -8,6 +8,7 @@ export const ALTORIA = {
     skills: ['Creativity', 'Unity (C#)', 'Photoshop', 'Illustrator', 'Maya']
   },
   category: 'VR GAME DESIGN + DEV',
+  time: 'May 2017',
   tags: ['vr', 'game dev'],
   body: [
     { type: 'heading', content: 'Intro' },

@@ -5,6 +5,7 @@
       <span class="badge" *ngIf="project.badge">{{project.badge}}</span>
     </h2>
     <p class="category">{{project.category}}</p>
+    <p class="time" *ngIf="project.time"><i class="far fa-clock mr-1"></i>{{project.time}}</p>
     <div class="content__main">
       <ng-container *ngFor="let elem of project.body">
         <h4 *ngIf="elem.type === 'heading'">{{elem.content}}</h4>

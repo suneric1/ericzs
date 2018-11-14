@@ -15,6 +15,7 @@ export const USER_AUTH = {
     ]
   },
   category: 'UX/UI DESIGN + FRONT-END DEV',
+  time: 'May 2018',
   tags: ['ux', 'front end', 'angular'],
   body: [
     { type: 'heading', content: 'Intro' },

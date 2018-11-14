@@ -8,6 +8,7 @@ export const CUBE_PLANET = {
     skills: ['Creativity','Unity (C#)', 'Photoshop', 'Illustrator', 'Project Management']
   },
   category: 'GAME DESIGN + DEV',
+  time: 'Jan 2017',
   tags: ['mobile', 'game dev'],
   body: [
     { type: 'heading', content: 'Intro' },
