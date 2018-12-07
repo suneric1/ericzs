@@ -65,9 +65,9 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       d.targetOpacity = 0;
     }
 
-    d.scale = (0.1 * d.targetScale + d.scale * 0.9).toFixed(3);
-    d.opacity = (0.1 * d.targetOpacity + d.opacity * 0.9).toFixed(3);
-    d.blur = (0.1 * d.targetBlur + d.blur * 0.9).toFixed(3);
+    d.scale = lerp(d.scale, d.targetScale);
+    d.opacity = lerp(d.opacity, d.targetOpacity);
+    d.blur = lerp(d.blur, d.targetBlur);
 
     Object.assign(this.msgStyle, {
       transform: `scale(${d.scale})`,
@@ -80,3 +80,5 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     }
   }
 }
+
+const lerp = (from, to) => (from * 0.9 + 0.1 * to).toFixed(3);

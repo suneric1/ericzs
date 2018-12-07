@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter, throttleTime } from 'rxjs/operators';
 import { trigger, transition, style, animate, query, group, stagger, useAnimation } from '@angular/animations';
@@ -10,9 +10,6 @@ import { async } from 'rxjs/internal/scheduler/async';
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
-  host: {
-    '(window:scroll)': 'onScroll()'
-  },
   animations: [
     trigger('expand', [
       transition(':enter', [
@@ -72,6 +69,7 @@ export class NavbarComponent {
       });
   }
 
+  @HostListener('window:scroll')
   onScroll() {
     this.offsetY.next(window.scrollY - this.prevScrollY);
     this.prevScrollY = window.scrollY;

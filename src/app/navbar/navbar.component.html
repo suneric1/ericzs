@@ -1,7 +1,9 @@
 <nav class="navbar navbar-expand-md navbar-light" [ngClass]="navClass" @fadeDown>
   <div class="container-fluid">
     <div class="logo d-none d-md-block">
-      <object data="./assets/img/logo.svg" type="image/svg+xml"></object>
+      <object data="./assets/img/logo.svg" type="image/svg+xml">
+        <img src="./assets/img/logo.svg" alt="">
+      </object>
     </div>
     <a class="navbar-brand" routerLink="/">
       <span class="first-name" [class.shifted]="showMenu">
