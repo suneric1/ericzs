@@ -15,8 +15,8 @@
   will-change: background, padding;
 
   &.shrinked {
-    background-color: #f9f9f9;
-    padding: 1rem;
+    padding: .5rem;
+    box-shadow: 0 1px 4px 0 #80808021;
 
     &:after {
       display: block;

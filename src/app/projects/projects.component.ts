@@ -53,18 +53,11 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   update() {
     const d = this.styleData;
     const y = window.scrollY;
-    if (y < 5) {
-      d.targetOffsetY = 0;
-      d.targetScale = 1;
-      d.targetOpacity = 1;
-      d.targetBlur = 0;
-    } else if (y < 100) {
-      d.targetOffsetY = -y / 2;
+    if (y < 100) {
       d.targetScale = 1;
       d.targetOpacity = 1;
       d.targetBlur = 0;
     } else if (y < 400) {
-      d.targetOffsetY = -y / 2;
       d.targetScale = 1 - (y - 100) / 800;
       d.targetOpacity = 1 - (y - 100) / 200;
       d.targetBlur = (y - 100) / 40;
@@ -72,13 +65,12 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       d.targetOpacity = 0;
     }
 
-    d.offsetY = (0.1 * d.targetOffsetY + d.offsetY * 0.9).toFixed(3);
     d.scale = (0.1 * d.targetScale + d.scale * 0.9).toFixed(3);
     d.opacity = (0.1 * d.targetOpacity + d.opacity * 0.9).toFixed(3);
     d.blur = (0.1 * d.targetBlur + d.blur * 0.9).toFixed(3);
 
     Object.assign(this.msgStyle, {
-      transform: `translateY(${d.offsetY}px) scale(${d.scale})`,
+      transform: `scale(${d.scale})`,
       opacity: d.opacity,
       filter: `blur(${d.blur}px)`
     });

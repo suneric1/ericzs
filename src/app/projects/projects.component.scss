@@ -16,6 +16,7 @@
   font-size: 1.2rem;
   animation: message-anim 1s;
   transition: transform 0.1s;
+  transform-origin: center -500px;
 
   .design, .develop {
     position: relative;
