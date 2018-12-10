@@ -52,7 +52,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
 
   update() {
     const d = this.styleData;
-    const y = window.scrollY;
+    const y = window.pageYOffset;
     if (y < 100) {
       d.targetScale = 1;
       d.targetOpacity = 1;

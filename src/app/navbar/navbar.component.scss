@@ -10,7 +10,7 @@
   position: fixed;
   top: 0;
   z-index: 100;
-  align-items: flex-start;
+  align-items: center;
   transition: all 0.5s;
   will-change: background, padding;
 
@@ -73,6 +73,8 @@
 .logo {
   position: absolute;
   left: calc(50% - 28px);
+  height: 32px;
+  top: calc(50% - 16px);
 }
 
 .nav-item {

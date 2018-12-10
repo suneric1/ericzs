@@ -59,7 +59,7 @@ export class NavbarComponent {
         throttleTime(300, async, { trailing: true })
       )
       .subscribe(val => {
-        if (window.scrollY <= 100) {
+        if (window.pageYOffset <= 100) {
           this.navClass = '';
         } else if (this.inProject) {
           this.navClass = val > 0 ? 'hidden' : 'shrinked';
@@ -71,8 +71,8 @@ export class NavbarComponent {
 
   @HostListener('window:scroll')
   onScroll() {
-    this.offsetY.next(window.scrollY - this.prevScrollY);
-    this.prevScrollY = window.scrollY;
+    this.offsetY.next(window.pageYOffset - this.prevScrollY);
+    this.prevScrollY = window.pageYOffset;
   }
 
   toggleMenu() {

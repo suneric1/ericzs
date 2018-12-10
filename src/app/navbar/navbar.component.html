@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-md navbar-light" [ngClass]="navClass" @fadeDown>
+  <div class="logo d-none d-md-block">
+    <object data="./assets/img/logo.svg" type="image/svg+xml">
+      <img src="./assets/img/logo.svg" alt="">
+    </object>
+  </div>
   <div class="container-fluid">
-    <div class="logo d-none d-md-block">
-      <object data="./assets/img/logo.svg" type="image/svg+xml">
-        <img src="./assets/img/logo.svg" alt="">
-      </object>
-    </div>
-    <a class="navbar-brand" routerLink="/">
+    <a class="navbar-brand mr-auto" routerLink="/">
       <span class="first-name" [class.shifted]="showMenu">
         <span class="cn">ZHIMING</span>
         <span class="en">ERIC</span>
