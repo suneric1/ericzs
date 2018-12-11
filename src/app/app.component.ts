@@ -6,6 +6,12 @@ import { routerTrans } from './routerTrans.animation';
 
 smoothscroll.polyfill();
 
+declare const ga: any;
+const updateGa = (url) => {
+  ga('set', 'page', url);
+  ga('send', 'pageview');
+};
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -20,6 +26,8 @@ export class AppComponent {
 
   constructor(router: Router) {
     router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe(e => {
+      updateGa(e['urlAfterRedirects']);
+      
       this.prevState = this.routerState;
       this.routerState = this.outlet.activatedRouteData.state;
       
