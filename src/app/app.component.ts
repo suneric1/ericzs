@@ -22,7 +22,7 @@ export class AppComponent {
   title = 'ericzs';
   prevState;
   routerState;
-  @ViewChild(RouterOutlet, { static: false }) outlet: RouterOutlet;
+  @ViewChild(RouterOutlet) outlet: RouterOutlet;
 
   constructor(router: Router) {
     router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe(e => {
