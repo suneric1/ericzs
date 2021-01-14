@@ -6,7 +6,7 @@ import { routerTrans } from './routerTrans.animation';
 
 smoothscroll.polyfill();
 
-declare const ga: any;
+declare const ga: Function;
 const updateGa = (url) => {
   ga('set', 'page', url);
   ga('send', 'pageview');
