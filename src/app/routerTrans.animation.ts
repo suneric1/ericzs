@@ -1,6 +1,6 @@
 import { trigger, transition, style, animate, group, query } from "@angular/animations";
 
-const ANIM_TIMING = '500ms cubic-bezier(.83,.01,.17,1)';
+const ANIM_TIMING = '800ms cubic-bezier(.83,.01,.17,1)';
 
 export const routerTrans = trigger('routerTrans', [
   transition('home => contact', [
