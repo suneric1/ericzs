@@ -1,6 +1,6 @@
-export const PLAN_SETUP = {
-  name: '401k-plan-setup',
-  thumbnail: '401k-plan-setup.svg',
+export const BESPOKE = {
+  name: 'bespoke',
+  thumbnail: 'bespoke.svg',
   size: 1,
   info: {
     role: 'DESIGNER + DEVELOPER',

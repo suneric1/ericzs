@@ -22,7 +22,7 @@ export const TRIANGO = {
     {
       type: 'youtube',
       src: 'https://www.youtube.com/embed/QZbEUmopGaI',
-      caption: 'Game Trailer'
+      caption: 'Game Trailer Created in After Effects'
     },
     {
       type: 'para',
@@ -37,11 +37,11 @@ export const TRIANGO = {
       src: './assets/img/tg-2.png',
       caption: 'Level 2'
     },
-    {
-      type: 'ext-link',
-      src: '/triango',
-      text: 'Try it out'
-    },
+    // {
+    //   type: 'ext-link',
+    //   src: '/triango',
+    //   text: 'Try it out'
+    // },
     { type: 'heading', content: 'The Ask' },
     {
       type: 'para',

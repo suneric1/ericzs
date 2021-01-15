@@ -1,3 +1,4 @@
+import { BESPOKE } from '../posts/bespoke';
 import {
   PLAN_SETUP,
   ALTORIA,
@@ -16,6 +17,7 @@ import {
 } from '../posts/index';
 
 export const projects = [
+  // BESPOKE,
   PLAN_SETUP,
   USER_AUTH,
   ALTORIA,
@@ -25,7 +27,6 @@ export const projects = [
   ENERGY_USE,
   THE_COLORING_BOOK,
   HAPTICS_SIMULATOR,
-  INCIDENTCARE,
   POLICE_RADIO_APP,
   TRIANGO,
   EAT_GREEN_STAY_COOL,
