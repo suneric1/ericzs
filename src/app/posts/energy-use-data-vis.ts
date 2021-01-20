@@ -1,6 +1,6 @@
 export const ENERGY_USE = {
   name: 'energy-use-data-vis',
-  thumbnail: 'energyuse.svg',
+  thumbnail: 'energyuse.png',
   size: 1,
   info: {
     role: 'REPORTER + DEVELOPER',

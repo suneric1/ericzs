@@ -1,5 +1,6 @@
-import { BESPOKE } from '../posts/bespoke';
 import {
+  TELOS_DESIGN_SYSTEM,
+  BESPOKE,
   PLAN_SETUP,
   ALTORIA,
   CUBE_PLANET,
@@ -17,7 +18,8 @@ import {
 } from '../posts/index';
 
 export const projects = [
-  // BESPOKE,
+  TELOS_DESIGN_SYSTEM,
+  BESPOKE,
   PLAN_SETUP,
   USER_AUTH,
   ALTORIA,

@@ -12,3 +12,5 @@ export * from './the-coloring-book';
 export * from './theme-park-ticket-app';
 export * from './triango';
 export * from './401k-user-auth';
+export * from './bespoke';
+export * from './telos-design-system';

@@ -6,96 +6,80 @@ export const BESPOKE = {
     role: 'DESIGNER + DEVELOPER',
     context: 'WORK PROJECT',
     skills: [
+      'Product Design',
       'Angular',
       'HTML',
       'TypeScript',
       'CSS / Sass',
-      'Product Design',
-      'Sketch'
-    ]
+      'Sketch',
+    ],
   },
   category: 'PRODUCT DESIGN + FRONT-END DEV',
-  time: 'Apr 2020',
+  time: 'Jun 2020',
   tags: ['ux', 'front end', 'angular'],
   body: [
     { type: 'heading', content: 'Intro' },
     {
       type: 'para',
-      content: `Setting up a 401(k) plan can be tedious and time-consuming. Employers that are interested in setting up a plan
-    usually don’t have enough knowledge of it, so a sales representative have to be involved. At Slavic401k, this
-    has been done on paper for many years. In order to improve the efficiency and capacity of acquiring new business,
-    we started this Angular project which will allow employers to self-serve most of the process.`
-    },
-    {
-      type: 'image',
-      src: './assets/img/plan-setup-contribution.gif',
-      caption: 'Angular implementation with mock data'
+      content: `At Slavic401k, Bespoke has been a popular portfolio option for our 401k participants, as it
+      dynamically adjusts their investment allocation based on their retirement goal and risk tolerance. In
+      order to make this feature available for other 401(k) recordkeepers using FIS Relius, on top of which
+      we've built a lot of tools to support our business, we decided to productize it as a service.`,
     },
     { type: 'heading', content: 'The Ask' },
     {
       type: 'para',
-      content: `Based on the business requirements and data points in the plan setup documents, design and build an Angular app
-      for employers to proactively start the process of setting up a plan, provide the required information, configure
-      the plan specifications, and sign generated documents through DocuSign.`
+      content: `Design and build the MVP of Bespoke, which includes the enrollment process and the user 
+      dashboard, both integrated with FIS Relius using SSO. When a recordkeeper enables Bespoke in Relius,
+      their participants will be able to enroll with Bespoke and let it take care of their investment allocation.`,
     },
     { type: 'heading', content: 'The Answer' },
     {
       type: 'para',
-      content: `To be honest, as the only designer for this project, I strongly feel that the best UX for this process should
-      be minimal, meaning that the users don’t have to enter any company information or answer compliance questions,
-      all those should be automatically imported. What they need to worry about should only be the decisions they want
-      to make, such as when the 401(k) plan starts, eligibility requirements, and the employer contributions, etc.
-      However, automation requires an API integration with our clients, which is not ready yet. Therefore, the task
-      will be to optimize the data entry flow and experience.`
-    },
-    {
-      type: 'para',
-      content: `The first step is to sort out the requirements by mind mapping.`
+      content: `While there were many challenges we faced when working on this project, managing conflicting
+      priorities was the one I was mostly concerned. Much as we want to deliver all the great features in our backlog, we are
+      just a small team, so reusability is the key. In our product roadmap, the new Participant Dashboard was one 
+      of the upcoming big project. Due to the similarity between it and Bespoke, I tried to keep the design and 
+      code as reusable as possible. In fact, about 80% of the components can be reused in Participant Dashboard.`,
     },
     {
       type: 'image',
-      src: './assets/img/plan-setup-mind-map.png',
-      caption: 'Mind mapping (disregard my terrible handwriting)'
+      src: './assets/img/bes-1.png',
+      caption: 'Bespoke Dashboard',
     },
     {
       type: 'para',
-      content: `As a flow with a bunch of questions that might be beyond the knowledge of its users, it needs to be progressive
-      so they don’t
-      get overwhelmed. Regulations should also be taken cared by design. For example, the constraints of a lot of
-      fields
-      are dependent on other fields, so it needs to keep track of them and notify the user if a previous input is no
-      longer valid. Based on my understanding of the business logic and going back and forth with the stakeholders,
-      I created the user flow before I worked on the wireframes and hi-fi design.`
+      content: `The account overview page provides participants a clear view of the most important data points they 
+      should care about, including the account balance, contribution, investment allowcation, and most importantly, 
+      retirement savings projection. The stacked area chart visualizes how your account balance might grow, and how
+      much the employer match contributes to it.`,
     },
     {
       type: 'image',
-      src: './assets/img/plan-setup-user-flow.png',
-      caption: 'User flow'
+      src: './assets/img/bes-2.png',
+      caption: 'Enrollment - Retirement Goal Settings',
     },
     {
       type: 'para',
-      content: `Given the close deadline and the workload, this is certainly a big project as I’m responsible for the entire
-      design and the
-      majority of front-end development. Thanks to the symbol based style guide I built in Sketch for previous
-      projects,
-      I was able to quickly complete most of the design and iterate with prototypes.`
-    },
-    {
-      type: 'para',
-      content: `In addition to the style guide, I also created a customized Bootstrap library, which got a complete rewrite 
-      and evolved to a more sophisticated design system after this project.`
+      content: `During enrollment, retirement goal setting is the most important step. You're able to play around 
+      with the numbers and see how they might affect your retirement savings. Clicking the "Set to recommended" 
+      button will adjust your contribution rate so that your retirement goal can be met.`,
     },
     {
       type: 'image',
-      src: './assets/img/plan-setup-hi-fi-design.png',
-      caption: 'High Fidelity Design'
+      src: './assets/img/bes-3.png',
+      caption: 'Adding beneficiaries',
     },
     {
       type: 'para',
-      content: `A good thing about being both a product designer and a front-end developer is that I don’t need to be too detailed on
-      the prototypes, especially when it comes to animations that are not very well supported in tools like Sketch prototyping /
-      InVision. I can implement my ideas directly when building the Angular app, which, at the end of the day, could serve as
-      a prototype before it’s production ready.`
-    }
-  ]
+      content: `Overall, the idea of Bespoke is very straightforward, but the core is really the investment 
+      allocation logic and the algorithm behind the retirement savings chart. Honestly, there are a lot we can 
+      improve to help participants make better decisions, but this is good enough for an MVP. Even if it turned
+      out not as successful as we expected, our efforts already contributed to the upcoming projects.`,
+    },
+    {
+      type: 'para',
+      content: `Fail fast, learn faster.`,
+    },
+  ],
 };
