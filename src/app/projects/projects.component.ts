@@ -68,6 +68,9 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     d.scale = lerp(d.scale, d.targetScale);
     d.opacity = lerp(d.opacity, d.targetOpacity);
     d.blur = lerp(d.blur, d.targetBlur);
+    if (d.blur < 0.05) {
+      d.blur = 0;
+    }
 
     Object.assign(this.msgStyle, {
       transform: `scale(${d.scale})`,
