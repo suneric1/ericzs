@@ -1,10 +1,13 @@
-export const BISCAYNE_VR = {
+import { Post } from './post';
+
+export const BISCAYNE_VR: Post = {
   name: 'biscayne-vr',
+  title: 'Biscayne VR',
   thumbnail: 'biscaynevr.svg',
   size: 1,
   info: {
-    role: 'DESIGNER + DEVELOPER',
-    context: 'SCHOOL PROJECT',
+    role: 'Designer + Developer',
+    context: 'School Project',
     skills: ['VR Developing','Unity (C#)', 'Photoshop', 'Illustrator']
   },
   category: 'VR EXPERIENCE',

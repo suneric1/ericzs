@@ -1,10 +1,13 @@
-export const ALTORIA = {
+import { Post } from './post';
+
+export const ALTORIA: Post = {
   name: 'altoria',
+  title: 'Altoria VR Game Demo',
   thumbnail: 'altoria.svg',
   size: 1,
   info: {
-    role: 'UX + DEVELOPER',
-    context: 'SCHOOL PROJECT',
+    role: 'UX + Developer',
+    context: 'School Project',
     skills: ['Creativity', 'Unity (C#)', 'Photoshop', 'Illustrator', 'Maya']
   },
   category: 'VR GAME DESIGN + DEV',

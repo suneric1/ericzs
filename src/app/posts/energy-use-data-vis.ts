@@ -1,12 +1,15 @@
-export const ENERGY_USE = {
+import { Post } from './post';
+
+export const ENERGY_USE: Post = {
   name: 'energy-use-data-vis',
+  title: 'Energy Use Data Visualization',
   thumbnail: 'energyuse.png',
   size: 1,
   info: {
-    role: 'REPORTER + DEVELOPER',
-    context: 'SCHOOL PROJECT',
+    role: 'Reporter + Developer',
+    context: 'School Project',
     skills: ['D3.js', 'Data Visualization', 'HTML', 'JavaScript', 'CSS'],
-    link: ['Check it out!', 'http://suneric1.github.io/energy-use-data-viz']
+    links: { 'Check it out!': 'http://suneric1.github.io/energy-use-data-viz' }
   },
   category: 'INTERACTIVE DATA VISUALIZATION',
   time: 'May 2016',

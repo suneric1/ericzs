@@ -1,10 +1,13 @@
-export const THEME_PARK_TICKET_APP = {
+import { Post } from './post';
+
+export const THEME_PARK_TICKET_APP: Post = {
   name: 'theme-park-ticketing',
+  title: 'Theme Park Ticketing Prototype',
   thumbnail: 'crazyland.svg',
   size: 1,
   info: {
-    role: 'UX DESIGNER',
-    context: 'SCHOOL PROJECT',
+    role: 'UX Designer',
+    context: 'School Project',
     skills: ['UI / UX Design', 'Sketch', 'Flinto']
   },
   category: 'PROTOTYPE',

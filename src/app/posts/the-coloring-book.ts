@@ -1,12 +1,15 @@
-export const THE_COLORING_BOOK = {
+import { Post } from './post';
+
+export const THE_COLORING_BOOK: Post = {
   name: 'the-coloring-book',
+  title: 'The Coloring Book',
   thumbnail: 'the-coloring-book.svg',
   size: 1,
   info: {
-    role: 'DESIGNER + DEVELOPER',
-    context: 'SCHOOL PROJECT',
+    role: 'Designer + Developer',
+    context: 'School Project',
     skills: ['Node.js', 'Hapi', 'Handlebars', 'SQL', 'HTML', 'JavaScript', 'CSS', 'Sketch'],
-    link: ['Try it out!', 'http://thecoloringbook.herokuapp.com']
+    links: { 'Try it out!': 'http://thecoloringbook.herokuapp.com' }
   },
   category: 'WEB DESIGN + FULL STACK DEV',
   time: 'May 2017',

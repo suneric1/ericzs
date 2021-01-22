@@ -33,20 +33,16 @@
   opacity: 0;
   overflow: hidden;
 
-  &:hover .icons {
-    opacity: 0;
-  }
+  // &:hover .icons {
+  //   opacity: 0;
+  // }
 
   .icons {
     display: flex;
-    position: absolute;
     align-items: center;
     background-color: white;
-    box-shadow: -3px 0px 10px 1px rgba(255, 255, 255, 1);
-    right: .5rem;
-    top: 0;
-    bottom: 0;
     transition: all .2s ease-in-out;
+    margin-left: auto;
   }
 
   .icon-wrapper {
@@ -77,8 +73,8 @@
     align-items: center;
     font-weight: 800;
     margin-bottom: 0;
-    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 

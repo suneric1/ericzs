@@ -1,12 +1,15 @@
-export const TRIANGO = {
+import { Post } from './post';
+
+export const TRIANGO: Post = {
   name: 'triango',
+  title: 'TrianGo - Puzzle Game',
   thumbnail: 'triango.svg',
   size: 1,
   info: {
-    role: 'DESIGNER + DEVELOPER',
-    context: 'SCHOOL PROJECT',
+    role: 'Designer + Developer',
+    context: 'School Project',
     skills: ['Creativity', 'Unity (C#)', 'Photoshop', 'Illustrator', 'After Effects', 'Premiere'],
-    link: {
+    links: {
       'Try it out!': '/triango'
     }
   },

@@ -1,10 +1,13 @@
-export const CUBE_PLANET = {
+import { Post } from './post';
+
+export const CUBE_PLANET: Post = {
   name: 'cube-planet',
+  title: 'Cube Planet Mobile Game',
   thumbnail: 'cubeplanet.png',
   size: 2,
   info: {
-    role: 'ALL (EXCEPT SOUND)',
-    context: 'SCHOOL PROJECT',
+    role: 'All (Except Music)',
+    context: 'School Project',
     skills: ['Creativity','Unity (C#)', 'Photoshop', 'Illustrator', 'Project Management']
   },
   category: 'GAME DESIGN + DEV',

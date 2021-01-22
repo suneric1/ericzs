@@ -1,10 +1,13 @@
-export const PLAN_SETUP = {
+import { Post } from './post';
+
+export const PLAN_SETUP: Post = {
   name: '401k-plan-setup',
+  title: '401k Plan Setup',
   thumbnail: '401k-plan-setup.svg',
   size: 1,
   info: {
-    role: 'DESIGNER + DEVELOPER',
-    context: 'WORK PROJECT',
+    role: 'Designer + Developer',
+    context: 'Work Project',
     skills: [
       'Angular',
       'HTML',

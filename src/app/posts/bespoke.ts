@@ -1,10 +1,13 @@
-export const BESPOKE = {
+import { Post } from './post';
+
+export const BESPOKE: Post = {
   name: 'bespoke',
+  title: 'Bespoke',
   thumbnail: 'bespoke.svg',
   size: 1,
   info: {
-    role: 'DESIGNER + DEVELOPER',
-    context: 'WORK PROJECT',
+    role: 'Designer + Developer',
+    context: 'Work Project',
     skills: [
       'Product Design',
       'Angular',

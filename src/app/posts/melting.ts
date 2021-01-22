@@ -1,10 +1,13 @@
-export const MELTING = {
+import { Post } from './post';
+
+export const MELTING: Post = {
   name: 'melting',
+  title: 'Melting - Interactive Experience',
   thumbnail: 'melting.svg',
   size: 1,
   info: {
-    role: 'DESIGNER + DEVELOPER',
-    context: 'SCHOOL PROJECT',
+    role: 'Designer + Developer',
+    context: 'School Project',
     skills: ['openFrameworks', 'C++']
   },
   category: 'INTERACTIVE INSTALLATION',

@@ -1,10 +1,13 @@
-export const HAPTICS_SIMULATOR = {
+import { Post } from './post';
+
+export const HAPTICS_SIMULATOR: Post = {
   name: 'haptics-simulator',
+  title: 'Haptics Simulator',
   thumbnail: 'haptics.svg',
   size: 1,
   info: {
-    role: 'MAKER + DEVELOPER',
-    context: 'SCHOOL PROJECT',
+    role: 'Maker + Developer',
+    context: 'School Project',
     skills: ['Physical Computing', 'Arduino', 'JavaScript']
   },
   category: 'PHYSICAL COMPUTING',

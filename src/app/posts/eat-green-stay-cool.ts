@@ -1,10 +1,13 @@
-export const EAT_GREEN_STAY_COOL = {
+import { Post } from './post';
+
+export const EAT_GREEN_STAY_COOL: Post = {
   name: 'eat-green-stay-cool',
+  title: 'Eat Green Stay Cool',
   thumbnail: 'eatgreen.svg',
   size: 1,
   info: {
-    role: 'REPORTER + DESIGNER',
-    context: 'SCHOOL PROJECT',
+    role: 'Reporter + Designer',
+    context: 'School Project',
     skills: ['Data Visualization', 'Illustrator']
   },
   category: 'DATA VISUALIZATION',

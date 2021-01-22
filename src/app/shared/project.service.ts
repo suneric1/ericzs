@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { projects } from './projects';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Post } from '../posts/post';
 
 @Injectable({
   providedIn: 'root'
@@ -9,16 +10,15 @@ export class ProjectService {
 
   constructor(private sanitizer: DomSanitizer) { }
 
-  getProjects() {
+  getProjects(): TransformedPost[] {
     return projects.map(project => {
-      const title = project.name.split('-').join(' ').toUpperCase();
       const tags = this.getTagsDetails(project.tags);
   
-      const body = (<any[]>project.body).map(elem => {
+      const body = project.body.map(elem => {
         const src = elem.type === 'youtube' ? this.sanitizer.bypassSecurityTrustResourceUrl(elem.src) : elem.src;
         return { ...elem, src };
       });
-      return { ...project, body, title, tags };
+      return { ...project, body, tags };
     });
   }
 
@@ -82,4 +82,9 @@ export class ProjectService {
     };
     return tags.map(tag => icons[tag] || {});
   }
+}
+
+export interface TransformedPost extends Post {
+  tags: any[];
+  body: any;
 }

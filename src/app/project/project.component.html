@@ -1,8 +1,8 @@
 <div class="project-wrapper" [class.loading]="!loaded">
-  <app-project-info class="d-none d-md-block col-12 col-md-3 mr-5" [project]="project" [loading]="!loaded"></app-project-info>
+  <app-project-info class="d-none d-md-block col-12 col-md-3 mr-5" [project]="project"></app-project-info>
   <div class="content">
     <h2 class="title">{{project.title}}
-      <span class="badge" *ngIf="project.badge">{{project.badge}}</span>
+      <!-- <span class="badge" *ngIf="project.badge">{{project.badge}}</span> -->
     </h2>
     <p class="category">{{project.category}}</p>
     <p class="time" *ngIf="project.time"><i class="far fa-clock mr-1"></i>{{project.time}}</p>

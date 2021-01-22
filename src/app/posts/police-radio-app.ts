@@ -1,12 +1,15 @@
-export const POLICE_RADIO_APP = {
+import { Post } from './post';
+
+export const POLICE_RADIO_APP: Post = {
   name: 'police-radio-app',
+  title: 'Police Radio App Prototype',
   thumbnail: 'radioapp.svg',
   size: 1,
   info: {
-    role: 'UX DESIGNER',
-    context: 'SCHOOL PROJECT',
+    role: 'UX Designer',
+    context: 'School Project',
     skills: ['UI / UX Design', 'Sketch', 'InVision'],
-    link: {
+    links: {
       'View Report': 'https://drive.google.com/file/d/0ByT8WMcW900tcTVYRzlKbkNyQms/view?usp=sharing',
       'Interactive Prototype': 'https://invis.io/3U947DFW5#/200620016_1'
     }

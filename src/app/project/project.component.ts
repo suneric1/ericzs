@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProjectService } from '../shared/project.service';
+import { ProjectService, TransformedPost } from '../shared/project.service';
 import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
@@ -17,8 +17,8 @@ import { trigger, transition, style, animate } from '@angular/animations';
   ]
 })
 export class ProjectComponent implements OnInit {
-  project;
-  projects;
+  project: TransformedPost;
+  projects: TransformedPost[];
   nextLink;
   nextName;
   loaded = true;
@@ -39,11 +39,11 @@ export class ProjectComponent implements OnInit {
         }, 5000);
       }
 
-      const pi = this.projects.findIndex(({ name }) => name === this.project.name);
-      const next =
-        pi < this.projects.length - 1 ? this.projects[pi + 1].name : this.projects[0].name;
+      const pi = this.projects.findIndex(p => p === this.project);
+      const piNext = pi < this.projects.length - 1 ? pi + 1 : 0;
+      const next = this.projects[piNext].name;
       this.nextLink = ['/projects', next];
-      this.nextName = next.split('-').join(' ').toUpperCase();
+      this.nextName = this.projects[piNext].title;
     });
   }
 

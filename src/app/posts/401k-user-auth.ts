@@ -1,10 +1,13 @@
-export const USER_AUTH = {
+import { Post } from './post';
+
+export const USER_AUTH: Post = {
   name: 'slavic401k-user-auth',
+  title: 'Slavic401k User Auth',
   thumbnail: '401k-user-auth.svg',
   size: 1,
   info: {
-    role: 'DESIGNER + DEVELOPER',
-    context: 'WORK PROJECT',
+    role: 'Designer + Developer',
+    context: 'Work Project',
     skills: [
       'AngularJS',
       'UX / UI Design',

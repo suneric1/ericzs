@@ -1,10 +1,13 @@
-export const TELOS_DESIGN_SYSTEM = {
-  name: 'telos design system',
+import { Post } from './post';
+
+export const TELOS_DESIGN_SYSTEM: Post = {
+  name: 'telos-design-system',
+  title: 'Telos Design System',
   thumbnail: 'tds.png',
   size: 1,
   info: {
-    role: 'DESIGNER + DEVELOPER',
-    context: 'WORK PROJECT',
+    role: 'Designer + Developer',
+    context: 'Work Project',
     skills: [
       'Design System',
       'Management',
@@ -72,7 +75,7 @@ export const TELOS_DESIGN_SYSTEM = {
     },
     {
       type: 'para',
-      content: `I started this project with my spare time, and now it has been a critical part of all our new products. Other team members have also started to contribute to the design system. Even though it's still in an early stage, it really made us a better team.`,
+      content: `I started this project with my spare time, and now it has been a critical part of all our new products. Other team members have also started to contribute to the design system. Even though it's still in an early stage, we've become a better team because of it.`,
     },
   ],
 };
