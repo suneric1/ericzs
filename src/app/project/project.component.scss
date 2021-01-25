@@ -98,6 +98,7 @@ app-project-info {
 
     img {
       max-width: calc(100% - 60px);
+      max-height: 480px;
 
       &.xl {
         max-height: initial;

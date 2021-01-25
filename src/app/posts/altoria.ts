@@ -28,9 +28,9 @@ export const ALTORIA: Post = {
       content: `Along the way he uncovers the mystery surrounding this Macilent stranger, his family, and the jinn Alma herself.`
     },
     {
-      type: 'youtube',
-      src: 'https://www.youtube.com/embed/a2C0x7ZOsyg',
-      caption: 'Walkthrough Video'
+      type: 'image',
+      src: './assets/img/altoria_vr.gif',
+      caption: 'Inventory Interaction'
     },
     { type: 'heading', content: 'The Ask' },
     {
@@ -38,6 +38,11 @@ export const ALTORIA: Post = {
       content: `Collaborate with a game designer to build a VR game (demo) in a semester.`
     },
     { type: 'heading', content: 'The Answer' },
+    {
+      type: 'youtube',
+      src: 'https://www.youtube.com/embed/a2C0x7ZOsyg',
+      caption: 'Walkthrough Video'
+    },
     {
       type: 'para',
       content: `This was the first time I developed a VR game, which was a very time-consuming project and it's been a great learning experience. 

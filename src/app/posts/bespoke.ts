@@ -59,8 +59,8 @@ export const BESPOKE: Post = {
     },
     {
       type: 'image',
-      src: './assets/img/bes-2.png',
-      caption: 'Enrollment - Retirement Goal Settings',
+      src: './assets/img/bes-rec.gif',
+      caption: 'Retirement Goal Settings',
     },
     {
       type: 'para',

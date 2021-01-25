@@ -43,7 +43,7 @@ export const CUBE_PLANET: Post = {
     },
     {
       type: 'image',
-      src: './assets/img/cube-planet.jpg',
+      src: './assets/img/cube-planet.gif',
       caption: 'Screenshots'
     },
   ]
