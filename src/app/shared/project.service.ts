@@ -7,19 +7,29 @@ import { Post } from '../posts/post';
   providedIn: 'root'
 })
 export class ProjectService {
+  projects: TransformedPost[] = projects.map(project => {
+    const tags = this.getTagsDetails(project.tags);
+
+    const body = project.body.map(elem => {
+      const src = elem.type === 'youtube' ? this.sanitizer.bypassSecurityTrustResourceUrl(elem.src) : elem.src;
+      return { ...elem, src };
+    });
+    return { ...project, body, tags };
+  });
 
   constructor(private sanitizer: DomSanitizer) { }
 
   getProjects(): TransformedPost[] {
-    return projects.map(project => {
-      const tags = this.getTagsDetails(project.tags);
-  
-      const body = project.body.map(elem => {
-        const src = elem.type === 'youtube' ? this.sanitizer.bypassSecurityTrustResourceUrl(elem.src) : elem.src;
-        return { ...elem, src };
-      });
-      return { ...project, body, tags };
-    });
+    return this.projects;
+  }
+
+  getNextProject(curr: TransformedPost, step = 1) {
+    const pi = this.projects.findIndex((p) => p === curr);
+    const piNext = (pi + step + this.projects.length) % this.projects.length;
+    return {
+      link: ['/projects', this.projects[piNext].name],
+      title: this.projects[piNext].title,
+    };
   }
 
   getTagsDetails(tags: string[] = []) {
