@@ -12,7 +12,8 @@ export const MELTING: Post = {
   },
   category: 'INTERACTIVE INSTALLATION',
   time: 'May 2017',
-  tags: ['experience'],
+  tags: ['experimental'],
+  featured: true,
   body: [
     { type: 'heading', content: 'Intro' },
     {

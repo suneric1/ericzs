@@ -4,8 +4,7 @@
     <h6>{{project.title}}</h6>
     <div class="icons">
       <span *ngFor="let tag of project.tags" class="icon-wrapper" [ngClass]="tag.bg">
-        <i [ngClass]="tag.fa" *ngIf="tag.fa"></i>
-        <img [src]="tag.img" *ngIf="tag.img">
+        <i class="icon-font" [ngClass]="tag.icon"></i>
       </span>
     </div>
   </div>

@@ -15,7 +15,7 @@ export const TRIANGO: Post = {
   },
   category: 'GAME DESIGN + DEV',
   time: 'Dec 2015',
-  tags: ['game dev'],
+  tags: ['game'],
   body: [
     { type: 'heading', content: 'Intro' },
     {

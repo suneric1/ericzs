@@ -19,7 +19,8 @@ export const USER_AUTH: Post = {
   },
   category: 'UX/UI DESIGN + FRONT-END DEV',
   time: 'May 2018',
-  tags: ['ux', 'front end', 'angular'],
+  tags: ['design', 'dev'],
+  featured: true,
   body: [
     { type: 'heading', content: 'Intro' },
     {

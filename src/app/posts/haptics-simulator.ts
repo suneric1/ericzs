@@ -12,7 +12,7 @@ export const HAPTICS_SIMULATOR: Post = {
   },
   category: 'PHYSICAL COMPUTING',
   time: 'May 2016',
-  tags: ['arduino', 'experience'],
+  tags: ['experimental'],
   body: [
     { type: 'heading', content: 'Intro' },
     {

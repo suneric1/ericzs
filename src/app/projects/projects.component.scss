@@ -50,13 +50,55 @@
   }
 }
 
+.tabs {
+  position: relative;
+  z-index: 1;
+  margin-top: 25rem;
+  padding-right: .5rem;
+  overflow: auto;
+  white-space: nowrap;
+
+  .tab {
+    display: inline-block;
+    color: #c7c7c7;
+    font-size: .75rem;
+    text-transform: uppercase;
+    padding: .25rem .5rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    border: 1px solid #E9E9E9;
+    box-shadow: 0 1px 4px 0 rgba(106,106,106,0.10);
+    margin: 0 0 1rem .5rem;
+    letter-spacing: 1px;
+
+    &:hover {
+      background: #F6F6F6;
+    }
+
+    .icon-font {
+      color: #c7c7c7;
+    }
+
+    &.tab-focused {
+      color: #3a3a3a;
+      background: #fcc03021;
+      border-color: #FDBA0550;
+
+      .icon-font {
+        color: #FDBA05;
+      }
+    }
+  }
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
   position: relative;
   z-index: 1;
-  margin-top: 25rem;
   background: #fff;
+  min-height: 100vh;
+  align-content: start;
 }
 
 app-thumbnail {

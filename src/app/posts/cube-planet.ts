@@ -12,7 +12,8 @@ export const CUBE_PLANET: Post = {
   },
   category: 'GAME DESIGN + DEV',
   time: 'Jan 2017',
-  tags: ['mobile', 'game dev'],
+  tags: ['game'],
+  featured: true,
   body: [
     { type: 'heading', content: 'Intro' },
     {

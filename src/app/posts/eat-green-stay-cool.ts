@@ -12,7 +12,8 @@ export const EAT_GREEN_STAY_COOL: Post = {
   },
   category: 'DATA VISUALIZATION',
   time: 'Dec 2015',
-  tags: ['data vis', 'infographics'],
+  tags: ['data_viz'],
+  featured: true,
   body: [
     { type: 'heading', content: 'Intro' },
     {

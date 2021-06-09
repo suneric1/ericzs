@@ -19,7 +19,8 @@ export const PLAN_SETUP: Post = {
   },
   category: 'PRODUCT DESIGN + FRONT-END DEV',
   time: 'Apr 2020',
-  tags: ['ux', 'front end', 'angular'],
+  tags: ['design', 'dev'],
+  featured: true,
   body: [
     { type: 'heading', content: 'Intro' },
     {

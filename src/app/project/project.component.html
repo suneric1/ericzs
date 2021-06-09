@@ -42,16 +42,8 @@
       </ng-container>
     </div>
     <div class="footer">
-      <div ngbDropdown placement="top-left" (openChange)="dropdownOn = $event">
-        <a class="footer__btn list" ngbDropdownToggle><i class="fas fa-th-list mr-1"></i>ALL</a>
-        <div ngbDropdownMenu [@fade]="dropdownOn">
-          <button class="dropdown-item" [routerLink]="['/projects', p.name]" *ngFor="let p of projects">
-            <h6>{{p.title}}</h6>
-            <div>
-              <span class="tag" *ngFor="let tag of p.tags" [ngClass]="tag.bg">{{tag.name}}</span>
-            </div>
-          </button>
-        </div>
+      <div placement="top-left">
+        <a routerLink="/" class="footer__btn home"><i class="fas fa-home"></i></a>
       </div>
       <a [routerLink]="nextLink" class="footer__btn next">
         <h6>NEXT PROJECT</h6>

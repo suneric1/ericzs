@@ -13,7 +13,7 @@ export const THE_COLORING_BOOK: Post = {
   },
   category: 'WEB DESIGN + FULL STACK DEV',
   time: 'May 2017',
-  tags: ['front end', 'back end'],
+  tags: ['dev'],
   body: [ 
     { type: 'heading', content: 'Intro' },
     {

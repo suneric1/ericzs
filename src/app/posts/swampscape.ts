@@ -13,7 +13,7 @@ export const SWAMPSCAPE: Post = {
   },
   category: 'VR EXPERIENCE',
   time: 'May 2017',
-  tags: ['vr', 'experience'],
+  tags: ['vr', 'experimental'],
   body: [
     { type: 'heading', content: 'Intro' },
     {

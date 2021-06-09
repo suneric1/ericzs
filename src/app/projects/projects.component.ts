@@ -1,7 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { trigger, useAnimation, transition } from '@angular/animations';
+import { trigger, useAnimation, transition, query, style, animate } from '@angular/animations';
 import { fadeUp } from '../shared/fade-up.animation';
 import { ProjectService } from '../shared/project.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -12,6 +13,13 @@ import { ProjectService } from '../shared/project.service';
   ]
 })
 export class ProjectsComponent implements OnInit, OnDestroy {
+  tabs = [
+    ['design_dev', 'Design & Dev', 'icon-design'],
+    ['data_viz', 'Data Viz', 'icon-data_viz'],
+    ['game_vr', 'Game & VR', 'icon-vr'],
+    ['experimental', 'Experimental', 'icon-experimental'],
+    ['all', 'All', ''],
+  ];
   projects;
   styleData: any = {
     targetOffsetY: 0,
@@ -21,15 +29,21 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     targetOpacity: 1,
     opacity: 1,
     targetBlur: 0,
-    blur: 0
+    blur: 0,
   };
   msgStyle: any = {};
   willAnimate: boolean;
 
-  constructor(private projectService: ProjectService) {}
+  constructor(
+    private projectService: ProjectService,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit() {
-    this.projects = this.projectService.getProjects();
+    this.route.queryParams.subscribe((params) => {
+      this.projects = this.projectService.getProjects(params.filter);
+    });
+
     this.willAnimate = true;
     requestAnimationFrame(this.update.bind(this));
 
@@ -75,12 +89,20 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     Object.assign(this.msgStyle, {
       transform: `scale(${d.scale})`,
       opacity: d.opacity,
-      filter: `blur(${d.blur}px)`
+      filter: `blur(${d.blur}px)`,
     });
 
     if (this.willAnimate) {
       requestAnimationFrame(this.update.bind(this));
     }
+  }
+
+  scroll(top) {
+    window.scroll({
+      top: top - 80, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
   }
 }
 

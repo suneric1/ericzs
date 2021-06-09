@@ -23,7 +23,6 @@ export class ProjectComponent implements OnInit {
   nextLink;
   nextName;
   loaded = true;
-  dropdownOn = false;
 
   constructor(
     private route: ActivatedRoute,

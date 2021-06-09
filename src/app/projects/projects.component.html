@@ -1,13 +1,42 @@
 <div class="intro-container">
-  <p class="intro text-center text-sm-left" [ngStyle]="msgStyle" @fadeUp>Hi. My name is Zhiming Sun. I’m a
+  <p class="intro text-center" [ngStyle]="msgStyle" @fadeUp>
+    A
     <span class="design" fireParticles="circle">designer</span>
-    &
+    +
     <span class="develop" fireParticles="rect">developer</span>
-    based in Miami. I like to create interactive products with both great aesthetics and user experience. I dedicate
-    myself to
-    engaging and functional designs that leverage creative technologies to expand the possibility of the real world.</p>
+    dedicated to efficient and enjoyable user experience. I craft meaningful
+    designs with analytical thinking and empathy, and strive for best practices
+    when it comes to implementation.
+  </p>
+</div>
+<div class="tabs" #tabsElem @fadeUp>
+  <a
+    class="tab"
+    routerLinkActive="tab-focused"
+    [routerLinkActiveOptions]="{ exact: true }"
+    routerLink="/"
+    (click)="scroll(tabsElem.offsetTop)"
+  >
+    <i class="icon-font icon-star"></i>
+    Featured
+  </a>
+  <a
+    *ngFor="let t of tabs"
+    class="tab"
+    routerLinkActive="tab-focused"
+    routerLink="/"
+    [queryParams]="{ filter: t[0] }"
+    (click)="scroll(tabsElem.offsetTop)"
+  >
+    <i class="icon-font" [ngClass]="t[2]"></i>
+    {{ t[1] }}
+  </a>
 </div>
 <div class="projects" @fadeUp>
-  <app-thumbnail *ngFor="let project of projects" [project]="project" [ngClass]="'size-'+project.size"></app-thumbnail>
+  <app-thumbnail
+    *ngFor="let project of projects"
+    [project]="project"
+    [ngClass]="'size-' + project.size"
+  ></app-thumbnail>
 </div>
 <app-footer></app-footer>

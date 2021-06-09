@@ -50,8 +50,12 @@ export class NavbarComponent {
   constructor(router: Router) {
     router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe(e => {
       this.inProject = e['url'].startsWith('/projects');
-      this.workActive = e['url'] === '/' || this.inProject;
-      this.navClass = '';
+      this.workActive = e['url'] === '/' || this.inProject;        
+      if (window.pageYOffset <= 100) {
+        this.navClass = '';
+      } else {
+        this.navClass = 'shrinked';
+      }
     });
     this.offsetY
       .pipe(

@@ -20,7 +20,8 @@ export const TELOS_DESIGN_SYSTEM: Post = {
   },
   category: 'DESIGN + FRONT-END DEV',
   time: 'Q1 2020',
-  tags: ['ux', 'front end', 'angular'],
+  tags: ['design', 'dev'],
+  featured: true,
   body: [
     { type: 'heading', content: 'Intro' },
     {

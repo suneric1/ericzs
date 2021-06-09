@@ -16,7 +16,7 @@ export const INCIDENTCARE: Post = {
   },
   category: 'PROTOTYPE',
   time: 'Dec 2016',
-  tags: ['ux'],
+  tags: ['design'],
   body: [
     { type: 'heading', content: 'Intro' },
     {

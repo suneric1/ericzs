@@ -12,21 +12,17 @@ export interface Post {
   category: string;
   time: string;
   tags: Tag[];
+  featured?: boolean;
   body: PostBlock[];
 }
 
 export type Tag =
-  | 'ux'
-  | 'front end'
-  | 'back end'
-  | 'mobile'
-  | 'angular'
+  | 'design'
+  | 'dev'
+  | 'data_viz'
+  | 'game'
   | 'vr'
-  | 'game dev'
-  | 'experience'
-  | 'arduino'
-  | 'data vis'
-  | 'infographics';
+  | 'experimental';
 
 export type PostBlockType =
   | 'heading'

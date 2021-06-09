@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -37,7 +36,6 @@ import { SocialLinksComponent } from './social-links/social-links.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    NgbDropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -32,7 +32,9 @@ export class AppComponent {
       this.routerState = this.outlet.activatedRouteData.state;
       
       if (this.prevState === this.routerState) {
-        window.scroll({ top: 0, left: 0 });
+        if (this.prevState === 'project') {
+          window.scroll({ top: 0, left: 0 });
+        }
       } else {
         window.scroll({
           top: 0, 

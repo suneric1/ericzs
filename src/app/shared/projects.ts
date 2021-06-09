@@ -14,7 +14,7 @@ import {
   TRIANGO,
   EAT_GREEN_STAY_COOL,
   THEME_PARK_TICKET_APP,
-  USER_AUTH
+  USER_AUTH,
 } from '../posts/index';
 
 export const projects = [
@@ -32,5 +32,4 @@ export const projects = [
   POLICE_RADIO_APP,
   TRIANGO,
   EAT_GREEN_STAY_COOL,
-  THEME_PARK_TICKET_APP
 ];

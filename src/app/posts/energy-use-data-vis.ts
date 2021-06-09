@@ -2,7 +2,7 @@ import { Post } from './post';
 
 export const ENERGY_USE: Post = {
   name: 'energy-use-data-vis',
-  title: 'Energy Use Data Visualization',
+  title: 'Energy Use Data Viz',
   thumbnail: 'energyuse.png',
   size: 1,
   info: {
@@ -13,7 +13,8 @@ export const ENERGY_USE: Post = {
   },
   category: 'INTERACTIVE DATA VISUALIZATION',
   time: 'May 2016',
-  tags: ['data vis', 'front end'],
+  tags: ['data_viz', 'dev'],
+  featured: true,
   body: [
     { type: 'heading', content: 'Intro' },
     {

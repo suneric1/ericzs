@@ -12,7 +12,8 @@ export const ALTORIA: Post = {
   },
   category: 'VR GAME DESIGN + DEV',
   time: 'May 2017',
-  tags: ['vr', 'game dev'],
+  tags: ['vr', 'game'],
+  featured: true,
   body: [
     { type: 'heading', content: 'Intro' },
     {

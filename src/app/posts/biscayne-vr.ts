@@ -12,7 +12,8 @@ export const BISCAYNE_VR: Post = {
   },
   category: 'VR EXPERIENCE',
   time: 'May 2017',
-  tags: ['vr', 'experience'],
+  tags: ['vr'],
+  featured: true,
   body: [
     { type: 'heading', content: 'Intro' },
     {

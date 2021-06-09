@@ -12,7 +12,7 @@ export const THEME_PARK_TICKET_APP: Post = {
   },
   category: 'PROTOTYPE',
   time: 'Mar 2016',
-  tags: ['mobile', 'ux'],
+  tags: ['design'],
   body: [
     { type: 'heading', content: 'Intro' },
     {
