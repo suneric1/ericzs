@@ -5,7 +5,7 @@
       <!-- <span class="badge" *ngIf="project.badge">{{project.badge}}</span> -->
     </h2>
     <p class="category">{{project.category}}</p>
-    <p class="time" *ngIf="project.time"><i class="far fa-clock mr-1"></i>{{project.time}}</p>
+    <p class="time" *ngIf="project.time"><i class="icon-font icon-calendar-empty mr-1"></i>{{project.time}}</p>
     <div class="content__main">
       <ng-container *ngFor="let elem of project.body">
         <h4 *ngIf="elem.type === 'heading'">{{elem.content}}</h4>
@@ -28,27 +28,27 @@
 
         <div class="ext-link" *ngIf="elem.type === 'ext-link'">
           <a [href]="elem.src" target="_blank">
-            <i class="fas fa-external-link-square-alt"></i>
+            <i class="icon-font icon-link-ext-alt"></i>
             {{elem.text}}
           </a>
         </div>
 
         <div class="quote" *ngIf="elem.type === 'quote'">
-          <i class="fas fa-quote-left"></i>
+          <i class="icon-font icon-quote-left"></i>
           <p>{{elem.quote}}</p>
           <p class="text-right"><a [href]="elem.by[1]" target="_blank">–– {{elem.by[0]}}</a></p>
-          <i class="fas fa-quote-right"></i>
+          <i class="icon-font icon-quote-right"></i>
         </div>
       </ng-container>
     </div>
     <div class="footer">
       <div placement="top-left">
-        <a routerLink="/" class="footer__btn home"><i class="fas fa-home"></i></a>
+        <a routerLink="/" class="footer__btn home"><i class="icon-font icon-home"></i></a>
       </div>
       <a [routerLink]="nextLink" class="footer__btn next">
         <h6>NEXT PROJECT</h6>
         <p class="next-name">{{nextName}}</p>
-        <i class="fas fa-caret-right"></i>
+        <i class="icon-font icon-right-dir"></i>
       </a>
     </div>
   </div>

@@ -76,13 +76,17 @@ app-project-info {
     color: #6d757d;
   }
 
+  .icon-font::before {
+    margin: 0;
+  }
+
   .time {
     text-align: right;
     font-style: italic;
     color: $secondary;
     font-size: .9rem;
 
-    .far {
+    .icon-font {
       color: #c7c7c7;
     }
   }
@@ -158,17 +162,17 @@ app-project-info {
     padding: 0 3rem 0 4rem;
     position: relative;
 
-    .fas {
+    .icon-font {
       font-size: 1.5rem;
       position: absolute;
     }
 
-    .fa-quote-left {
+    .icon-quote-left {
       left: 1rem;
       top: 0;
     }
 
-    .fa-quote-right {
+    .icon-quote-right {
       right: .5rem;
       bottom: 0;
     }
@@ -204,7 +208,7 @@ app-project-info {
       width: 100%;
     }
 
-    .fas {
+    .icon-font {
       transition: all .2s;
     }
 
@@ -234,13 +238,13 @@ app-project-info {
         line-height: 1.2;
       }
 
-      .fas {
+      .icon-font {
         position: absolute;
         right: 1.25rem;
-        top: calc(50% - .5rem);
+        top: calc(50% - .75rem);
       }
 
-      &:hover .fas {
+      &:hover .icon-font {
         right: 1rem;
       }
     }

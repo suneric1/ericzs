@@ -1,5 +1,7 @@
 .links {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .icon-wrapper {
@@ -23,7 +25,7 @@
   }
 
   &:hover {
-    .fab {
+    .icon-font {
       transform: translateY(-0.4rem);
     }
 
@@ -33,10 +35,25 @@
       bottom: -0.5rem;
     }
   }
+
+  .qrcode {
+    display: none;
+    position: absolute;
+    max-width: 10rem;
+    pointer-events: none;
+    bottom: 3.5rem;
+    left: -3.5rem;
+  }
+
+  .icon-wechat:hover + .qrcode {
+    display: block;
+  }
+
 }
 
-.fab {
+.icon-font {
+  display: inline-block;
   color: #363636;
-  font-size: 24px;
+  font-size: 1.5rem;
   transition: all 0.3s;
 }

@@ -124,15 +124,16 @@
     transform: rotate(-90deg);
   }
 
-  .fas {
+  .icon-font {
     font-size: 1.75rem;
     &:before {
-      content: '\f00d';
+      margin: 0;
+      content: '\e809';
     }
   }
 
-  &.collapsed .fas:before {
-    content: '\f0c9';
+  &.collapsed .icon-font:before {
+    content: '\e80a';
   }
 }
 
@@ -140,6 +141,10 @@
   @include media-breakpoint-up(md) {
     display: none !important;
   }
+}
+
+.nav-link {
+  padding: .25rem 1rem;
 }
 
 .nav-link.active {
