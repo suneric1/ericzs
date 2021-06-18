@@ -1,16 +1,17 @@
 import { Post } from './post';
 
 export const BISCAYNE_VR: Post = {
-  name: 'biscayne-vr',
+  id: 'biscayne-vr',
   title: 'Biscayne VR',
+  originLang: 'en',
   thumbnail: 'biscaynevr.svg',
   size: 1,
   info: {
     role: 'Designer + Developer',
-    context: 'School Project',
+    context: 'school',
     skills: ['VR Developing','Unity (C#)', 'Photoshop', 'Illustrator']
   },
-  category: 'VR EXPERIENCE',
+  category: 'VR Experience',
   time: 'May 2017',
   tags: ['vr'],
   featured: true,

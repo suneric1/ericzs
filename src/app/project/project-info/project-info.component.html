@@ -3,11 +3,11 @@
     <div class="thumbnail" [style.background-image]="bgUrl"></div>
   </div>
   <ul>
-    <h6>ROLE</h6>
+    <h6>{{ 'project.role.title' | translate }}</h6>
     <li>{{project.info.role}}</li>
-    <h6>CONTEXT</h6>
-    <li>{{project.info.context}}</li>
-    <h6>SKILLS CONTRIBUTED</h6>
+    <h6>{{ 'project.context.title' | translate }}</h6>
+    <li>{{ 'project.context.' + project.info.context | translate }}</li>
+    <h6>{{ 'project.skills.title' | translate }}</h6>
     <li *ngFor="let skill of project.info.skills">{{skill}}</li>
   </ul>
 </div>

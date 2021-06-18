@@ -1,8 +1,9 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
 import { trigger, useAnimation, transition, query, style, animate } from '@angular/animations';
 import { fadeUp } from '../shared/fade-up.animation';
 import { ProjectService } from '../shared/project.service';
 import { ActivatedRoute } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
@@ -33,10 +34,12 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   };
   msgStyle: any = {};
   willAnimate: boolean;
+  @ViewChild('tabsElem', { static: true }) tabsRef: ElementRef;
 
   constructor(
     private projectService: ProjectService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    public translate: TranslateService,
   ) {}
 
   ngOnInit() {
@@ -45,12 +48,12 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     });
 
     this.willAnimate = true;
-    requestAnimationFrame(this.update.bind(this));
+    requestAnimationFrame(this.updateIntro.bind(this));
 
     let timer;
     window.addEventListener('scroll', () => {
       if (this.willAnimate === false) {
-        requestAnimationFrame(this.update.bind(this));
+        requestAnimationFrame(this.updateIntro.bind(this));
       }
       this.willAnimate = true;
       clearTimeout(timer);
@@ -64,7 +67,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     this.willAnimate = false;
   }
 
-  update() {
+  updateIntro() {
     const d = this.styleData;
     const y = window.pageYOffset;
     if (y < 100) {
@@ -93,15 +96,21 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     });
 
     if (this.willAnimate) {
-      requestAnimationFrame(this.update.bind(this));
+      requestAnimationFrame(this.updateIntro.bind(this));
     }
   }
 
-  scroll(top) {
+  scroll(top, tab) {
     window.scroll({
-      top: top - 80, 
-      left: 0, 
-      behavior: 'smooth' 
+      top: top - 80,
+      left: 0,
+      behavior: 'smooth'
+    });
+
+    this.tabsRef.nativeElement.scroll({
+      top: 0,
+      left: tab.target.offsetLeft - 48,
+      behavior: 'smooth'
     });
   }
 }

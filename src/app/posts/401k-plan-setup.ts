@@ -1,13 +1,14 @@
 import { Post } from './post';
 
 export const PLAN_SETUP: Post = {
-  name: '401k-plan-setup',
+  id: '401k-plan-setup',
   title: '401k Plan Setup',
+  originLang: 'en',
   thumbnail: '401k-plan-setup.svg',
   size: 1,
   info: {
     role: 'Designer + Developer',
-    context: 'Work Project',
+    context: 'work',
     skills: [
       'Angular',
       'HTML',
@@ -17,7 +18,7 @@ export const PLAN_SETUP: Post = {
       'Sketch'
     ]
   },
-  category: 'PRODUCT DESIGN + FRONT-END DEV',
+  category: 'MVP of a Better Experience to Start 401k Plans',
   time: 'Apr 2020',
   tags: ['design', 'dev'],
   featured: true,

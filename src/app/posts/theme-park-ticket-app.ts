@@ -1,13 +1,14 @@
 import { Post } from './post';
 
 export const THEME_PARK_TICKET_APP: Post = {
-  name: 'theme-park-ticketing',
+  id: 'theme-park-ticketing',
   title: 'Theme Park Ticketing Prototype',
+  originLang: 'en',
   thumbnail: 'crazyland.svg',
   size: 1,
   info: {
     role: 'UX Designer',
-    context: 'School Project',
+    context: 'school',
     skills: ['UI / UX Design', 'Sketch', 'Flinto']
   },
   category: 'PROTOTYPE',

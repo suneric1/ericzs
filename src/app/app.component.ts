@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { Router, NavigationEnd, RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { filter } from 'rxjs/operators';
 import smoothscroll from 'smoothscroll-polyfill';
 import { routerTrans } from './routerTrans.animation';
@@ -24,7 +25,11 @@ export class AppComponent {
   routerState;
   @ViewChild(RouterOutlet) outlet: RouterOutlet;
 
-  constructor(router: Router) {
+  constructor(router: Router, translate: TranslateService) {
+    const lang = localStorage.getItem('lang') || 'en';
+    translate.setDefaultLang(lang);
+    translate.use(lang);
+
     router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe(e => {
       updateGa(e['urlAfterRedirects']);
       

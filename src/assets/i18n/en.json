@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "work": "WORK",
+    "contact": "CONTACT",
+    "resume": "RESUME (CN)",
+    "lang": "中文"
+  },
+  "intro": {
+    "start": "A",
+    "designer": "designer",
+    "conj": "+",
+    "developer": "developer",
+    "end": "dedicated to efficient and enjoyable user experience. I craft meaningful designs with analytical thinking and empathy, and strive for best practices when it comes to implementation."
+  },
+  "tabs": {
+    "featured": "Featured",
+    "design_dev": "Design & Dev",
+    "data_viz": "Data Viz",
+    "game_vr": "Game & VR",
+    "experimental": "Experimental",
+    "all": "All"
+  },
+  "project": {
+    "translated": "Google Translated from Chinese",
+    "viewOriginal": "View Original",
+    "role": {
+      "title": "ROLE"
+    },
+    "context": {
+      "title": "CONTEXT",
+      "work": "Work Project",
+      "school": "School Project"
+    },
+    "skills": {
+      "title": "SKILLS CONTRIBUTED"
+    },
+    "next": "NEXT PROJECT"
+  }
+}

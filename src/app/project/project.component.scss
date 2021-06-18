@@ -31,11 +31,34 @@ app-project-info {
   min-width: 200px;
 }
 
-.content {
+.translated {
+  font-size: .875rem;
+  display: inline-block;
+  color: #6d757d;
+  background: #f6f6f6;
+  border-radius: 1rem;
+  padding: 2px 8px;
+
+  .translate-link {
+    color: #007bff;
+    cursor: pointer;
+    margin-left: .25rem;
+
+    &:hover {
+      color: #0056b3;
+    }
+  }
+}
+
+.content::ng-deep {
   padding: 0 15px;
 
   @include media-breakpoint-down(sm) {
     padding: 0 2rem;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: 0 1rem;
   }
 
   .title {
@@ -46,6 +69,7 @@ app-project-info {
   }
 
   h6 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-bottom: .25rem;
   }
@@ -91,6 +115,20 @@ app-project-info {
     }
   }
 
+  blockquote {
+    color: #6d757d;
+    border-left: solid 2px #008eff;
+    padding-left: .5rem;
+
+    p {
+      margin-bottom: .25rem;
+    }
+  }
+
+  ol, ul, dl {
+    padding-left: 1.5rem;
+  }
+
   h4 {
     font-weight: bold;
     padding-top: 1.5rem;
@@ -99,13 +137,22 @@ app-project-info {
   .image-wrapper, .video-wrapper {
     text-align: center;
     padding: 1rem;
+    margin-bottom: 2rem;
 
-    img {
+    img, video {
       max-width: calc(100% - 60px);
       max-height: 480px;
 
       &.xl {
         max-height: initial;
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+      padding: 0;
+
+      img, video {
+        max-width: 100%;
       }
     }
 

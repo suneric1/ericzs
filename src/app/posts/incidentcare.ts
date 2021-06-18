@@ -1,13 +1,14 @@
 import { Post } from './post';
 
 export const INCIDENTCARE: Post = {
-  name: 'incidentcare',
+  id: 'incidentcare',
   title: 'IncidentCare',
+  originLang: 'en',
   thumbnail: 'incidentcare.svg',
   size: 1,
   info: {
     role: 'UX Designer',
-    context: 'School Project',
+    context: 'school',
     skills: ['UI / UX Design', 'Sketch', 'Adobe Xd'],
     links: {
       'View Report': 'https://drive.google.com/file/d/0ByT8WMcW900tZ1pvcElXMzY0NWM/view?usp=sharing',

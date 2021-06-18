@@ -2,6 +2,10 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProjectService, TransformedPost } from '../shared/project.service';
 import { trigger, transition, style, animate } from '@angular/animations';
+import marked from 'marked';
+import { TranslateService } from '@ngx-translate/core';
+import { switchMap } from 'rxjs/operators';
+import { concat, of } from 'rxjs';
 
 @Component({
   selector: 'app-project',
@@ -18,35 +22,70 @@ import { trigger, transition, style, animate } from '@angular/animations';
 })
 export class ProjectComponent implements OnInit {
   project: TransformedPost;
-  projects: TransformedPost[];
   prevLink;
   nextLink;
   nextName;
   loaded = true;
+  mdRendered;
 
   constructor(
     private route: ActivatedRoute,
     private projectService: ProjectService,
-    private router: Router
+    private router: Router,
+    public translate: TranslateService
   ) {}
 
   ngOnInit() {
-    this.projects = this.projectService.getProjects();
+    const renderer = {
+      image(href, title, text) {
+        if (title) {
+          return `
+          <div class="image-wrapper">
+            <img src="${href}" alt="${text}">
+            <p class="caption">${title}</p>
+          </div>
+          `;
+        } else {
+          return `
+          <div class="image-wrapper">
+            <img src="${href}" alt="${text}">
+          </div>
+          `;
+        }
+      },
+      link(href, title, text) {
+        return `
+        <a href="${href}" target="_blank">${text}</a>
+        `;
+      },
+    };
+    marked.use({ renderer });
 
     this.route.params.subscribe(({ id }) => {
-      this.project = this.projects.find(({ name }) => name === id);
+      const p = this.projectService.getProjectById(id);
+      this.project = p;
 
-      if (this.project.body.find(({ type }) => type === 'youtube')) {
+      if (p.mdContent) {
+        this.mdRendered = concat(
+          of(marked(p.mdContent[this.translate.currentLang])),
+          this.translate.onLangChange.pipe(
+            switchMap(({ lang }) => {
+              return of(marked(p.mdContent[lang]));
+            })
+          )
+        );
+        this.translate.use(this.translate.currentLang);
+      } else if (p.body?.find(({ type }) => type === 'youtube')) {
         this.loaded = false;
         setTimeout(() => {
           this.loaded = true;
         }, 5000);
       }
 
-      const next = this.projectService.getNextProject(this.project);
+      const next = this.projectService.getNextProject(p);
       this.nextLink = next.link;
       this.nextName = next.title;
-      this.prevLink = this.projectService.getNextProject(this.project, -1).link;
+      this.prevLink = this.projectService.getNextProject(p, -1).link;
     });
   }
 
@@ -69,5 +108,10 @@ export class ProjectComponent implements OnInit {
     if (src) {
       this.loaded = true;
     }
+  }
+
+  viewOriginal() {
+    const lang = this.project.originLang;
+    this.translate.use(lang);
   }
 }

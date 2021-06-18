@@ -2,13 +2,14 @@ import { Post } from './post';
 
 // TO-DO
 export const SWAMPSCAPE: Post = {
-  name: 'swampscape',
+  id: 'swampscape',
   title: 'SwampScape',
+  originLang: 'en',
   thumbnail: 'biscaynevr.svg',
   size: 1,
   info: {
     role: 'Designer + Developer',
-    context: 'School Project',
+    context: 'school',
     skills: ['VR Developing','Unity (C#)', 'Photoshop', 'Illustrator']
   },
   category: 'VR EXPERIENCE',

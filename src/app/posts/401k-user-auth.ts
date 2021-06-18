@@ -1,13 +1,14 @@
 import { Post } from './post';
 
 export const USER_AUTH: Post = {
-  name: 'slavic401k-user-auth',
+  id: 'slavic401k-user-auth',
   title: 'Slavic401k User Auth',
+  originLang: 'en',
   thumbnail: '401k-user-auth.svg',
   size: 1,
   info: {
     role: 'Designer + Developer',
-    context: 'Work Project',
+    context: 'work',
     skills: [
       'AngularJS',
       'UX / UI Design',
@@ -17,7 +18,7 @@ export const USER_AUTH: Post = {
       'Sketch'
     ]
   },
-  category: 'UX/UI DESIGN + FRONT-END DEV',
+  category: 'Abstracting Complexity of A Legacy Account System',
   time: 'May 2018',
   tags: ['design', 'dev'],
   featured: true,

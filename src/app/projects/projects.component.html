@@ -1,12 +1,10 @@
 <div class="intro-container">
-  <p class="intro text-center" [ngStyle]="msgStyle" @fadeUp>
-    A
-    <span class="design" fireParticles="circle">designer</span>
-    +
-    <span class="develop" fireParticles="rect">developer</span>
-    dedicated to efficient and enjoyable user experience. I craft meaningful
-    designs with analytical thinking and empathy, and strive for best practices
-    when it comes to implementation.
+  <p class="intro text-center" [ngClass]="translate.currentLang" [ngStyle]="msgStyle" @fadeUp>
+    {{ 'intro.start' | translate }}
+    <span class="design" fireParticles="circle">{{ 'intro.designer' | translate }}</span>
+    {{ 'intro.conj' | translate }}
+    <span class="develop" fireParticles="rect">{{ 'intro.developer' | translate }}</span>
+    {{ 'intro.end' | translate }}
   </p>
 </div>
 <div class="tabs" #tabsElem @fadeUp>
@@ -15,10 +13,10 @@
     routerLinkActive="tab-focused"
     [routerLinkActiveOptions]="{ exact: true }"
     routerLink="/"
-    (click)="scroll(tabsElem.offsetTop)"
+    (click)="scroll(tabsElem.offsetTop, $event)"
   >
     <i class="icon-font icon-star"></i>
-    Featured
+    {{ 'tabs.featured' | translate }}
   </a>
   <a
     *ngFor="let t of tabs"
@@ -26,10 +24,10 @@
     routerLinkActive="tab-focused"
     routerLink="/"
     [queryParams]="{ filter: t[0] }"
-    (click)="scroll(tabsElem.offsetTop)"
+    (click)="scroll(tabsElem.offsetTop, $event)"
   >
     <i class="icon-font" [ngClass]="t[2]"></i>
-    {{ t[1] }}
+    {{ 'tabs.' + t[0] | translate }}
   </a>
 </div>
 <div class="projects" @fadeUp>

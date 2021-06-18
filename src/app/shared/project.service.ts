@@ -10,7 +10,7 @@ export class ProjectService {
   projects: TransformedPost[] = projects.map((project) => {
     const tags = this.getTagsDetails(project.tags);
 
-    const body = project.body.map((elem) => {
+    const body = project.body?.map((elem) => {
       const src =
         elem.type === 'youtube'
           ? this.sanitizer.bypassSecurityTrustResourceUrl(elem.src)
@@ -38,11 +38,15 @@ export class ProjectService {
     );
   }
 
+  getProjectById(id: string) {
+    return this.projects.find(p => p.id === id);
+  }
+
   getNextProject(curr: TransformedPost, step = 1) {
     const pi = this.projects.findIndex((p) => p === curr);
     const piNext = (pi + step + this.projects.length) % this.projects.length;
     return {
-      link: ['/projects', this.projects[piNext].name],
+      link: ['/projects', this.projects[piNext].id],
       title: this.projects[piNext].title,
     };
   }

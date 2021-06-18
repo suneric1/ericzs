@@ -86,6 +86,12 @@
   white-space: nowrap;
   letter-spacing: 1px;
 
+  .lang-option {
+    cursor: pointer;
+    border: solid 1px #c7c7c7;
+    border-radius: 5px;
+  }
+
   a {
     position: relative;
 
@@ -95,7 +101,7 @@
     }
   }
 
-  a:after {
+  a:not(.lang-option):after {
     display: block;
     position: absolute;
     content: '';

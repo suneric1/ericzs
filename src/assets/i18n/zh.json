@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "work": "项目",
+    "contact": "联系",
+    "resume": "简历",
+    "lang": "EN"
+  },
+  "intro": {
+    "start": "是",
+    "designer": "设计师",
+    "conj": "，也是",
+    "developer": "工程师",
+    "end": "。我热衷于高效和令人愉悦的用户体验。做逻辑严密的设计，写赏心悦目的代码。"
+  },
+  "tabs": {
+    "featured": "精选",
+    "design_dev": "设计和开发",
+    "data_viz": "数据可视化",
+    "game_vr": "游戏和VR",
+    "experimental": "有点意思",
+    "all": "全部项目"
+  },
+  "project": {
+    "translated": "原文为英语，以下内容由谷歌翻译提供。",
+    "viewOriginal": "显示原文",
+    "role": {
+      "title": "角色"
+    },
+    "context": {
+      "title": "类型",
+      "work": "Work Project",
+      "school": "School Project"
+    },
+    "skills": {
+      "title": "相关技能"
+    },
+    "next": "下一页"
+  }
+}

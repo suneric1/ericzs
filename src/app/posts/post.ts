@@ -1,11 +1,11 @@
 export interface Post {
-  name: string;
+  id: string;
   title: string;
   thumbnail: string;
   size: 1 | 2;
   info: {
     role: string;
-    context: string;
+    context: 'work' | 'school';
     skills: string[];
     links?: { [text: string]: string };
   };
@@ -13,7 +13,12 @@ export interface Post {
   time: string;
   tags: Tag[];
   featured?: boolean;
-  body: PostBlock[];
+  body?: PostBlock[];
+  mdContent?: {
+    zh: string;
+    en: string;
+  };
+  originLang: 'en' | 'zh';
 }
 
 export type Tag =

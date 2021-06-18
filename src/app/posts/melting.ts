@@ -1,16 +1,17 @@
 import { Post } from './post';
 
 export const MELTING: Post = {
-  name: 'melting',
+  id: 'melting',
   title: 'Melting - Interactive Experience',
+  originLang: 'en',
   thumbnail: 'melting.svg',
   size: 1,
   info: {
     role: 'Designer + Developer',
-    context: 'School Project',
+    context: 'school',
     skills: ['openFrameworks', 'C++']
   },
-  category: 'INTERACTIVE INSTALLATION',
+  category: 'Interactive Projection Using openFrameworks and Kinect',
   time: 'May 2017',
   tags: ['experimental'],
   featured: true,

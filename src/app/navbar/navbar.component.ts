@@ -5,6 +5,7 @@ import { trigger, transition, style, animate, query, group, stagger, useAnimatio
 import { fadeDown } from '../shared/fade-down.animation';
 import { BehaviorSubject } from 'rxjs';
 import { async } from 'rxjs/internal/scheduler/async';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
@@ -47,7 +48,7 @@ export class NavbarComponent {
   prevScrollY: number = 0;
   offsetY: BehaviorSubject<number> = new BehaviorSubject(0);
 
-  constructor(router: Router) {
+  constructor(router: Router, private translate: TranslateService) {
     router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe(e => {
       this.inProject = e['url'].startsWith('/projects');
       this.workActive = e['url'].split('?')[0] === '/';        
@@ -81,5 +82,11 @@ export class NavbarComponent {
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
+  }
+
+  toggleLang() {
+    const lang = this.translate.currentLang === 'en' ? 'zh' : 'en';
+    this.translate.use(lang);
+    localStorage.setItem('lang', lang);
   }
 }

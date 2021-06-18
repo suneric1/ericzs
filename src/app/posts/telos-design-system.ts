@@ -1,13 +1,14 @@
 import { Post } from './post';
 
 export const TELOS_DESIGN_SYSTEM: Post = {
-  name: 'telos-design-system',
+  id: 'telos-design-system',
   title: 'Telos Design System',
+  originLang: 'en',
   thumbnail: 'tds.png',
   size: 1,
   info: {
     role: 'Designer + Developer',
-    context: 'Work Project',
+    context: 'work',
     skills: [
       'Design System',
       'Management',
@@ -18,7 +19,7 @@ export const TELOS_DESIGN_SYSTEM: Post = {
       'NPM',
     ],
   },
-  category: 'DESIGN + FRONT-END DEV',
+  category: 'A Design System at Early Stage',
   time: 'Q1 2020',
   tags: ['design', 'dev'],
   featured: true,

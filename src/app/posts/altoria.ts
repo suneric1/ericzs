@@ -1,16 +1,17 @@
 import { Post } from './post';
 
 export const ALTORIA: Post = {
-  name: 'altoria',
+  id: 'altoria',
   title: 'Altoria VR Game Demo',
+  originLang: 'en',
   thumbnail: 'altoria.svg',
   size: 1,
   info: {
-    role: 'UX + Developer',
-    context: 'School Project',
+    role: 'Game UX + Developer',
+    context: 'school',
     skills: ['Creativity', 'Unity (C#)', 'Photoshop', 'Illustrator', 'Maya']
   },
-  category: 'VR GAME DESIGN + DEV',
+  category: 'Designing Puzzle-Adventure VR Game Mechanics and Interaction',
   time: 'May 2017',
   tags: ['vr', 'game'],
   featured: true,

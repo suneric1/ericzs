@@ -27,13 +27,16 @@
 <ng-template #navList>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item">
-      <a class="nav-link" [class.active]="workActive" [routerLink]="['/']" (click)="showMenu = false">WORK</a>
+      <a class="nav-link" [class.active]="workActive" [routerLink]="['/']" (click)="showMenu = false">{{ 'navbar.work' | translate }}</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active" (click)="showMenu = false">CONTACT</a>
+      <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active" (click)="showMenu = false">{{ 'navbar.contact' | translate }}</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="https://cdn.ericzs.com/Zhiming+Sun+-+Resume+CN.pdf" target="_blank">RESUME (CN)</a>
+      <a class="nav-link" href="https://cdn.ericzs.com/Zhiming+Sun+-+Resume+CN.pdf" target="_blank">{{ 'navbar.resume' | translate }}</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link lang-option" (click)="toggleLang()">{{ 'navbar.lang' | translate }}</a>
     </li>
   </ul>
 </ng-template>
