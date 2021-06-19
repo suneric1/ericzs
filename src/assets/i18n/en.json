@@ -23,6 +23,7 @@
   "project": {
     "translated": "Google Translated from Chinese",
     "viewOriginal": "View Original",
+    "viewTranslated": "View Translated",
     "role": {
       "title": "ROLE"
     },

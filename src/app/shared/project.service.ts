@@ -9,15 +9,7 @@ import { Post } from '../posts/post';
 export class ProjectService {
   projects: TransformedPost[] = projects.map((project) => {
     const tags = this.getTagsDetails(project.tags);
-
-    const body = project.body?.map((elem) => {
-      const src =
-        elem.type === 'youtube'
-          ? this.sanitizer.bypassSecurityTrustResourceUrl(elem.src)
-          : elem.src;
-      return { ...elem, src };
-    });
-    return { ...project, body, tags };
+    return { ...project, tags };
   });
 
   constructor(private sanitizer: DomSanitizer) {}
@@ -96,5 +88,4 @@ export class ProjectService {
 
 export interface TransformedPost extends Post {
   tags: any[];
-  body: any;
 }

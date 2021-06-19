@@ -1,51 +1,19 @@
-<div class="project-wrapper" [class.loading]="!loaded">
+<div class="project-wrapper">
   <app-project-info class="d-none d-md-block col-12 col-md-3 mr-5" [project]="project"></app-project-info>
   <div class="content">
     <h2 class="title">{{project.title}}</h2>
     <p class="category">{{project.category}}</p>
     <p class="time" *ngIf="project.time"><i class="icon-font icon-calendar-empty mr-1"></i>{{project.time}}</p>
-    <p class="translated" *ngIf="project.originLang !== translate.currentLang">
-      {{ 'project.translated' | translate }}
-      <a class="translate-link" (click)="viewOriginal()">{{ 'project.viewOriginal' | translate }}</a>
-    </p>
-    <div class="content__main">
-      <div [innerHTML]="mdRendered | async" *ngIf="project.mdContent"></div>
-      <ng-container *ngIf="project.body">
-        <ng-container *ngFor="let elem of project.body">
-          <h4 *ngIf="elem.type === 'heading'">{{elem.content}}</h4>
-  
-          <h6 *ngIf="elem.type === 'h6'">{{elem.content}}</h6>
-  
-          <p class="paragraph" *ngIf="elem.type === 'para'" [innerHTML]="elem.content"></p>
-  
-          <div class="image-wrapper" *ngIf="elem.type.startsWith('image')">
-            <img [class.xl]="elem.type === 'image-xl'" [src]="elem.src">
-            <p class="caption">{{elem.caption}}</p>
-          </div>
-  
-          <div class="video-wrapper" *ngIf="elem.type === 'youtube'">
-            <div class="video">
-              <iframe [src]="elem.src" frameborder="0" allowfullscreen (load)="load(ifr.src)" #ifr></iframe>
-            </div>
-            <p class="col-xs-12 caption">{{elem.caption}}</p>
-          </div>
-  
-          <div class="ext-link" *ngIf="elem.type === 'ext-link'">
-            <a [href]="elem.src" target="_blank">
-              <i class="icon-font icon-link-ext-alt"></i>
-              {{elem.text}}
-            </a>
-          </div>
-  
-          <div class="quote" *ngIf="elem.type === 'quote'">
-            <i class="icon-font icon-quote-left"></i>
-            <p>{{elem.quote}}</p>
-            <p class="text-right"><a [href]="elem.by[1]" target="_blank">–– {{elem.by[0]}}</a></p>
-            <i class="icon-font icon-quote-right"></i>
-          </div>
-        </ng-container>
-      </ng-container>
+    <div *ngIf="project.originLang !== translate.currentLang">
+      <p class="translated" *ngIf="viewingLang !== project.originLang;">
+        {{ 'project.translated' | translate }}
+        <a class="translate-link" (click)="viewOriginal()">{{ 'project.viewOriginal' | translate }}</a>
+      </p>
+      <p class="translated" *ngIf="viewingLang === project.originLang;">
+        <a class="translate-link" (click)="viewTranslated()">{{ 'project.viewTranslated' | translate }}</a>
+      </p>
     </div>
+    <div class="content__main"[innerHTML]="viewingLang === 'en' ? renderedEn : renderedZh"></div>
     <div class="footer">
       <div placement="top-left">
         <a routerLink="/" class="footer__btn home"><i class="icon-font icon-home"></i></a>

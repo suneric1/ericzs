@@ -4,8 +4,7 @@ import { ProjectService, TransformedPost } from '../shared/project.service';
 import { trigger, transition, style, animate } from '@angular/animations';
 import marked from 'marked';
 import { TranslateService } from '@ngx-translate/core';
-import { switchMap } from 'rxjs/operators';
-import { concat, of } from 'rxjs';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-project',
@@ -25,13 +24,15 @@ export class ProjectComponent implements OnInit {
   prevLink;
   nextLink;
   nextName;
-  loaded = true;
-  mdRendered;
+  viewingLang;
+  renderedZh;
+  renderedEn;
 
   constructor(
     private route: ActivatedRoute,
     private projectService: ProjectService,
     private router: Router,
+    private sanitizer: DomSanitizer,
     public translate: TranslateService
   ) {}
 
@@ -60,26 +61,19 @@ export class ProjectComponent implements OnInit {
       },
     };
     marked.use({ renderer });
+    const renderMd = (md) => this.sanitizer.bypassSecurityTrustHtml(marked(md));
 
     this.route.params.subscribe(({ id }) => {
       const p = this.projectService.getProjectById(id);
       this.project = p;
 
       if (p.mdContent) {
-        this.mdRendered = concat(
-          of(marked(p.mdContent[this.translate.currentLang])),
-          this.translate.onLangChange.pipe(
-            switchMap(({ lang }) => {
-              return of(marked(p.mdContent[lang]));
-            })
-          )
+        this.renderedEn = renderMd(p.mdContent.en);
+        this.renderedZh = renderMd(p.mdContent.zh);
+        this.viewingLang = this.translate.currentLang;
+        this.translate.onLangChange.subscribe(
+          ({ lang }) => (this.viewingLang = lang)
         );
-        this.translate.use(this.translate.currentLang);
-      } else if (p.body?.find(({ type }) => type === 'youtube')) {
-        this.loaded = false;
-        setTimeout(() => {
-          this.loaded = true;
-        }, 5000);
       }
 
       const next = this.projectService.getNextProject(p);
@@ -104,14 +98,11 @@ export class ProjectComponent implements OnInit {
     }
   }
 
-  load(src) {
-    if (src) {
-      this.loaded = true;
-    }
+  viewOriginal() {
+    this.viewingLang = this.project.originLang;
   }
 
-  viewOriginal() {
-    const lang = this.project.originLang;
-    this.translate.use(lang);
+  viewTranslated() {
+    this.viewingLang = this.project.originLang === 'en' ? 'zh' : 'en';
   }
 }

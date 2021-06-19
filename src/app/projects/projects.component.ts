@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
-import { trigger, useAnimation, transition, query, style, animate } from '@angular/animations';
+import { trigger, useAnimation, transition } from '@angular/animations';
 import { fadeUp } from '../shared/fade-up.animation';
 import { ProjectService } from '../shared/project.service';
 import { ActivatedRoute } from '@angular/router';
