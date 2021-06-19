@@ -1,6 +1,4 @@
 import { Post } from './post';
-import zh from 'raw-loader!../../assets/articles/triango.zh.md';
-import en from 'raw-loader!../../assets/articles/triango.en.md';
 
 export const TRIANGO: Post = {
   id: 'triango',
@@ -26,5 +24,4 @@ export const TRIANGO: Post = {
   category: 'Puzzle Platformer Game Prototype',
   time: 'Dec 2015',
   tags: ['game'],
-  mdContent: { zh, en },
 };

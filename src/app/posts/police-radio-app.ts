@@ -1,6 +1,4 @@
 import { Post } from './post';
-import zh from 'raw-loader!../../assets/articles/police-radio-app.zh.md';
-import en from 'raw-loader!../../assets/articles/police-radio-app.en.md';
 
 export const POLICE_RADIO_APP: Post = {
   id: 'police-radio-app',
@@ -21,5 +19,4 @@ export const POLICE_RADIO_APP: Post = {
   category: 'Designing for Specific Device and Audience',
   time: 'Oct 2016',
   tags: ['design'],
-  mdContent: { zh, en },
 };

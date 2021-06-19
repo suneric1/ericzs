@@ -1,6 +1,4 @@
 import { Post } from './post';
-import zh from 'raw-loader!../../assets/articles/bespoke.zh.md';
-import en from 'raw-loader!../../assets/articles/bespoke.en.md';
 
 export const BESPOKE: Post = {
   id: 'bespoke',
@@ -24,8 +22,4 @@ export const BESPOKE: Post = {
   time: 'Q4 2019 - Q2 2020',
   tags: ['design', 'dev'],
   featured: true,
-  mdContent: {
-    zh,
-    en,
-  },
 };

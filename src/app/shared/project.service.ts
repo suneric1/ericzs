@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { projects } from './projects';
-import { DomSanitizer } from '@angular/platform-browser';
 import { Post } from '../posts/post';
+import { HttpClient } from '@angular/common/http';
+import { forkJoin } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -12,10 +13,10 @@ export class ProjectService {
     return { ...project, tags };
   });
 
-  constructor(private sanitizer: DomSanitizer) {}
+  constructor(private http: HttpClient) {}
 
   getProjects(filter?: string): TransformedPost[] {
-    if (!filter) return this.projects.filter(p => p.featured);
+    if (!filter) return this.projects.filter((p) => p.featured);
     if (filter === 'all') return this.projects;
     if (filter === 'design_dev')
       return this.projects.filter(({ tags }) =>
@@ -31,7 +32,7 @@ export class ProjectService {
   }
 
   getProjectById(id: string) {
-    return this.projects.find(p => p.id === id);
+    return this.projects.find((p) => p.id === id);
   }
 
   getNextProject(curr: TransformedPost, step = 1) {
@@ -41,6 +42,17 @@ export class ProjectService {
       link: ['/projects', this.projects[piNext].id],
       title: this.projects[piNext].title,
     };
+  }
+
+  getMarkdownById(id: string) {
+    return forkJoin(
+      this.http.get(`/assets/articles/${id}.en.md`, {
+        responseType: 'text',
+      }),
+      this.http.get(`/assets/articles/${id}.zh.md`, {
+        responseType: 'text',
+      })
+    );
   }
 
   getTagsDetails(tags: string[] = []) {

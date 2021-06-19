@@ -1,6 +1,4 @@
 import { Post } from './post';
-import zh from 'raw-loader!../../assets/articles/energy-use-data-vis.zh.md';
-import en from 'raw-loader!../../assets/articles/energy-use-data-vis.en.md';
 
 export const ENERGY_USE: Post = {
   id: 'energy-use-data-vis',
@@ -18,5 +16,4 @@ export const ENERGY_USE: Post = {
   time: 'May 2016',
   tags: ['data_viz', 'dev'],
   featured: true,
-  mdContent: { en, zh },
 };

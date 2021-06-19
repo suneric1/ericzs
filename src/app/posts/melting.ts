@@ -1,6 +1,4 @@
 import { Post } from './post';
-import zh from 'raw-loader!../../assets/articles/melting.zh.md';
-import en from 'raw-loader!../../assets/articles/melting.en.md';
 
 export const MELTING: Post = {
   id: 'melting',
@@ -17,5 +15,4 @@ export const MELTING: Post = {
   time: 'May 2017',
   tags: ['experimental'],
   featured: true,
-  mdContent: { zh, en },
 };

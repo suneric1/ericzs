@@ -1,6 +1,4 @@
 import { Post } from './post';
-import zh from 'raw-loader!../../assets/articles/biscayne-vr.zh.md';
-import en from 'raw-loader!../../assets/articles/biscayne-vr.en.md';
 
 export const BISCAYNE_VR: Post = {
   id: 'biscayne-vr',
@@ -17,5 +15,4 @@ export const BISCAYNE_VR: Post = {
   time: 'May 2017',
   tags: ['vr'],
   featured: true,
-  mdContent: { zh, en },
 };

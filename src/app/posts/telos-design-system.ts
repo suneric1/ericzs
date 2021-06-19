@@ -1,6 +1,4 @@
 import { Post } from './post';
-import zh from 'raw-loader!../../assets/articles/telos-design-system.zh.md';
-import en from 'raw-loader!../../assets/articles/telos-design-system.en.md';
 
 export const TELOS_DESIGN_SYSTEM: Post = {
   id: 'telos-design-system',
@@ -25,5 +23,4 @@ export const TELOS_DESIGN_SYSTEM: Post = {
   time: 'Q1 2020',
   tags: ['design', 'dev'],
   featured: true,
-  mdContent: { en, zh },
 };

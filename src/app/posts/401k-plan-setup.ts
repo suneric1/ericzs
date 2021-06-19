@@ -1,6 +1,4 @@
 import { Post } from './post';
-import zh from 'raw-loader!../../assets/articles/401k-plan-setup.zh.md';
-import en from 'raw-loader!../../assets/articles/401k-plan-setup.en.md';
 
 export const PLAN_SETUP: Post = {
   id: '401k-plan-setup',
@@ -24,5 +22,4 @@ export const PLAN_SETUP: Post = {
   time: 'Apr 2020',
   tags: ['design', 'dev'],
   featured: true,
-  mdContent: { zh, en },
 };

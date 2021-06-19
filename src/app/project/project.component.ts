@@ -27,6 +27,7 @@ export class ProjectComponent implements OnInit {
   viewingLang;
   renderedZh;
   renderedEn;
+  loading = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -62,24 +63,28 @@ export class ProjectComponent implements OnInit {
     };
     marked.use({ renderer });
     const renderMd = (md) => this.sanitizer.bypassSecurityTrustHtml(marked(md));
+    this.translate.onLangChange.subscribe(
+      ({ lang }) => (this.viewingLang = lang)
+    );
 
     this.route.params.subscribe(({ id }) => {
       const p = this.projectService.getProjectById(id);
       this.project = p;
-
-      if (p.mdContent) {
-        this.renderedEn = renderMd(p.mdContent.en);
-        this.renderedZh = renderMd(p.mdContent.zh);
-        this.viewingLang = this.translate.currentLang;
-        this.translate.onLangChange.subscribe(
-          ({ lang }) => (this.viewingLang = lang)
-        );
-      }
+      this.renderedEn = null;
+      this.renderedZh = null;
+      this.loading = true;
 
       const next = this.projectService.getNextProject(p);
       this.nextLink = next.link;
       this.nextName = next.title;
       this.prevLink = this.projectService.getNextProject(p, -1).link;
+
+      this.projectService.getMarkdownById(p.id).subscribe(([en, zh]) => {
+        this.loading = false;
+        this.renderedEn = renderMd(en);
+        this.renderedZh = renderMd(zh);
+        this.viewingLang = this.translate.currentLang;
+      });
     });
   }
 

@@ -1,6 +1,4 @@
 import { Post } from './post';
-import zh from 'raw-loader!../../assets/articles/the-coloring-book.zh.md';
-import en from 'raw-loader!../../assets/articles/the-coloring-book.en.md';
 
 export const THE_COLORING_BOOK: Post = {
   id: 'the-coloring-book',
@@ -26,5 +24,4 @@ export const THE_COLORING_BOOK: Post = {
   category: 'A Simple Full Stack Web App',
   time: 'May 2017',
   tags: ['dev'],
-  mdContent: { en, zh },
 };

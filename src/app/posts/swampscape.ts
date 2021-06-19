@@ -1,6 +1,4 @@
 import { Post } from './post';
-import zh from 'raw-loader!../../assets/articles/bespoke.zh.md';
-import en from 'raw-loader!../../assets/articles/bespoke.en.md';
 
 // TO-DO
 export const SWAMPSCAPE: Post = {

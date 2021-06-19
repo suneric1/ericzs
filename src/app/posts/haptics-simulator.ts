@@ -1,6 +1,4 @@
 import { Post } from './post';
-import zh from 'raw-loader!../../assets/articles/haptics-simulator.zh.md';
-import en from 'raw-loader!../../assets/articles/haptics-simulator.en.md';
 
 export const HAPTICS_SIMULATOR: Post = {
   id: 'haptics-simulator',
@@ -16,5 +14,4 @@ export const HAPTICS_SIMULATOR: Post = {
   category: 'Simulating Haptics with Arduino',
   time: 'May 2016',
   tags: ['experimental'],
-  mdContent: { en, zh },
 };

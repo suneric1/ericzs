@@ -1,6 +1,4 @@
 import { Post } from './post';
-import zh from 'raw-loader!../../assets/articles/eat-green-stay-cool.zh.md';
-import en from 'raw-loader!../../assets/articles/eat-green-stay-cool.en.md';
 
 export const EAT_GREEN_STAY_COOL: Post = {
   id: 'eat-green-stay-cool',
@@ -17,5 +15,4 @@ export const EAT_GREEN_STAY_COOL: Post = {
   time: 'Dec 2015',
   tags: ['data_viz'],
   featured: true,
-  mdContent: { zh, en },
 };

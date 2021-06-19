@@ -1,6 +1,4 @@
 import { Post } from './post';
-import zh from 'raw-loader!../../assets/articles/cube-planet.zh.md';
-import en from 'raw-loader!../../assets/articles/cube-planet.en.md';
 
 export const CUBE_PLANET: Post = {
   id: 'cube-planet',
@@ -23,5 +21,4 @@ export const CUBE_PLANET: Post = {
   time: 'Jan 2017',
   tags: ['game'],
   featured: true,
-  mdContent: { zh, en },
 };

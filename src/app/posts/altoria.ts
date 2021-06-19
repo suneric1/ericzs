@@ -1,6 +1,4 @@
 import { Post } from './post';
-import zh from 'raw-loader!../../assets/articles/altoria.zh.md';
-import en from 'raw-loader!../../assets/articles/altoria.en.md';
 
 export const ALTORIA: Post = {
   id: 'altoria',
@@ -17,5 +15,4 @@ export const ALTORIA: Post = {
   time: 'May 2017',
   tags: ['vr', 'game'],
   featured: true,
-  mdContent: { zh, en },
 };
