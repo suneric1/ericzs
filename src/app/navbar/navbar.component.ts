@@ -88,5 +88,6 @@ export class NavbarComponent {
     const lang = this.translate.currentLang === 'en' ? 'zh' : 'en';
     this.translate.use(lang);
     localStorage.setItem('lang', lang);
+    this.showMenu = false;
   }
 }

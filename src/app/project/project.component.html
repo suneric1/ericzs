@@ -6,10 +6,12 @@
     <p class="time" *ngIf="project.time"><i class="icon-font icon-calendar-empty mr-1"></i>{{project.time}}</p>
     <div *ngIf="project.originLang !== translate.currentLang">
       <p class="translated" *ngIf="viewingLang !== project.originLang;">
+        <i class="icon-font icon-language mr-1"></i>
         {{ 'project.translated' | translate }}
         <a class="translate-link" (click)="viewOriginal()">{{ 'project.viewOriginal' | translate }}</a>
       </p>
       <p class="translated" *ngIf="viewingLang === project.originLang;">
+        <i class="icon-font icon-language mr-1"></i>
         <a class="translate-link" (click)="viewTranslated()">{{ 'project.viewTranslated' | translate }}</a>
       </p>
     </div>

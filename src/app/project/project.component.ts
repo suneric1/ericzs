@@ -5,6 +5,8 @@ import { trigger, transition, style, animate } from '@angular/animations';
 import marked from 'marked';
 import { TranslateService } from '@ngx-translate/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { delayWhen } from 'rxjs/operators';
+import { timer } from 'rxjs';
 
 @Component({
   selector: 'app-project',
@@ -72,19 +74,23 @@ export class ProjectComponent implements OnInit {
       this.project = p;
       this.renderedEn = null;
       this.renderedZh = null;
-      this.loading = true;
 
       const next = this.projectService.getNextProject(p);
       this.nextLink = next.link;
       this.nextName = next.title;
       this.prevLink = this.projectService.getNextProject(p, -1).link;
 
-      this.projectService.getMarkdownById(p.id).subscribe(([en, zh]) => {
-        this.loading = false;
-        this.renderedEn = renderMd(en);
-        this.renderedZh = renderMd(zh);
-        this.viewingLang = this.translate.currentLang;
-      });
+      this.loading = true;
+      const startTime = Date.now();
+      this.projectService
+        .getMarkdownById(p.id)
+        .pipe(delayWhen(() => timer(startTime + 500 - Date.now())))
+        .subscribe(([en, zh]) => {
+          this.loading = false;
+          this.renderedEn = renderMd(en);
+          this.renderedZh = renderMd(zh);
+          this.viewingLang = this.translate.currentLang;
+        });
     });
   }
 

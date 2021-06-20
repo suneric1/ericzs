@@ -55,7 +55,12 @@ Bespoke是Slavic非常受欢迎的一项动态投资组合服务，它根据投�
 
 针对这些问题，我在设计上做出了一系列改进：
 
-[改进后的高保真原型 ↗️](https://www.sketch.com/s/ee6e54ee-5b05-4d8f-bc07-60bcfe53acb7/a/GmqJzME/play)
+<div class="ext-link">
+  <a href="https://www.sketch.com/s/ee6e54ee-5b05-4d8f-bc07-60bcfe53acb7/a/GmqJzME/play" target="_blank">
+    <i class="icon-font icon-link-ext-alt"></i>
+    改进后的高保真原型
+  </a>
+</div>
 
 ###### 优化retirement goal页面
 

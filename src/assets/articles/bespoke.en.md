@@ -55,7 +55,12 @@ After usability testing and user interviews, I found the following main problems
 
 In response to these problems, I made a series of improvements in the design:
 
-[Improved Hi-Fi Prototype ↗️](https://www.sketch.com/s/ee6e54ee-5b05-4d8f-bc07-60bcfe53acb7/a/GmqJzME/play)
+<div class="ext-link">
+  <a href="https://www.sketch.com/s/ee6e54ee-5b05-4d8f-bc07-60bcfe53acb7/a/GmqJzME/play" target="_blank">
+    <i class="icon-font icon-link-ext-alt"></i>
+    Improved Hi-Fi Prototype
+  </a>
+</div>
 
 ###### Optimize the Retirement Goal Page
 

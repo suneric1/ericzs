@@ -22,7 +22,7 @@ As a flow with a bunch of questions that might be beyond the knowledge of its us
 
 Given the close deadline and the workload, this is certainly a big project as I’m responsible for the entire design and the majority of front-end development. Thanks to the symbol based style guide I built in Sketch for previous projects, I was able to quickly complete most of the design and iterate with prototypes.
 
-In addition to the style guide, I also created a customized Bootstrap library, which got a complete rewrite and evolved to a more sophisticated design system after this project.
+In addition to the style guide, I also created a customized Bootstrap library, which got a complete rewrite and evolved to a more sophisticated [design system](/projects/telos-design-system) after this project.
 
 ![High Fidelity Design](./assets/img/plan-setup-hi-fi-design.png 'High Fidelity Design')
 

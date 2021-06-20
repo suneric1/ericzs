@@ -19,7 +19,7 @@ export const USER_AUTH: Post = {
     ],
   },
   category: 'Abstracting Complexity of A Legacy Account System',
-  time: 'May 2018',
+  time: 'Q2 2018',
   tags: ['design', 'dev'],
   featured: true,
 };

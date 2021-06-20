@@ -19,7 +19,7 @@ export const PLAN_SETUP: Post = {
     ],
   },
   category: 'MVP of a Better Experience to Start 401k Plans',
-  time: 'Apr 2020',
+  time: 'Q4 2018 - Q1 2019',
   tags: ['design', 'dev'],
-  featured: true,
+  featured: false,
 };

@@ -13,4 +13,6 @@ export * from './theme-park-ticket-app';
 export * from './triango';
 export * from './401k-user-auth';
 export * from './bespoke';
+export * from './contribution';
+export * from './tableau-dashboard';
 export * from './telos-design-system';
