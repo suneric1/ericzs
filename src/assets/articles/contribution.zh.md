@@ -56,7 +56,7 @@ Beta 测试期间，大约有 15%的 session 在格式异常后跳转到旧版�
 
 在最初的版本中，对于异常的项，用户只能选择修正或者删除。调取数据发现，部分用户会在这一步返回主页并使用旧版本上传，并且删除项的使用率非常低。通过进一步访谈我们得知，许多异常的数据需要客户花额外的时间去调查，而该步骤没有提供跳过的选项，不够灵活。同时删除项的功能存在一定的风险，于是我们将 Remove 改为 Mark for investigation，暂由业务部门按原有的流程处理。
 
-![异常处理步骤的原型演示](/assets/img/contribution/resolve-invalid.gif)
+![异常处理步骤的原型演示](/assets/img/contribution/resolve-invalid.gif '异常处理步骤的原型演示')
 
 ###### 分配 Forfeiture
 

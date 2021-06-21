@@ -23,7 +23,7 @@ Angular 库托管在 NPM 上，而存储库驻留在 BitBucket Cloud 中。 READ
 
 ![应用布局组件](./assets/img/tds-1.gif '应用布局组件')
 
-![多选组件](./assets/img/tds-2.gif '多选组件')
+![多选题组件](./assets/img/tds-2.gif '多选题组件')
 
 ![进度条组件](./assets/img/tds-3.gif '进度条组件')
 

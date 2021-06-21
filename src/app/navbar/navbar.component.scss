@@ -2,10 +2,8 @@
 
 .navbar {
   background-color: white;
-  font-family: 'Montserrat', sans-serif;
   padding: 2rem 1rem;
   font-size: 0.85rem;
-  font-weight: 500;
   width: 100%;
   position: fixed;
   top: 0;
@@ -42,6 +40,7 @@
   display: inline-block;
   overflow: hidden;
   padding-left: 1rem;
+  font-family: 'Montserrat', sans-serif;
 
   &:hover {
     .first-name {

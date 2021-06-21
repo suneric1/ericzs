@@ -26,6 +26,6 @@
     <defs></defs>
     <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(484.000000, 34.000000)">
         <circle id="yellow" fill="#FFF500" cx="40" cy="16" r="16"></circle>
-        <circle id="blue" fill="#82CDFF" cx="16" cy="16" r="16"></circle>
+        <circle id="blue" fill="#008eff" cx="16" cy="16" r="16"></circle>
     </g>
 </svg>

@@ -26,12 +26,11 @@
     &:before {
       position: absolute;
       content: "";
-      height: 3px;
+      height: 4px;
       width: 100%;
       z-index: -100;
       left: 0;
-      bottom: 3px;
-      border-radius: 5px;
+      bottom: 2px;
       transition: all ease 0.3s;
     }
 
@@ -52,7 +51,7 @@
   }
   
   .develop:before {
-    background-color: #82cdff;
+    background-color: #008eff;
   }
 }
 

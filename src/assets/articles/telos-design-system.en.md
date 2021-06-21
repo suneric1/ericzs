@@ -23,7 +23,7 @@ Additionally, there's a [Storybook page](https://tds-bak.vercel.app) where you c
 
 ![App Layout Component](./assets/img/tds-1.gif 'App Layout Component')
 
-![Multiple-Choice Component](./assets/img/tds-2.gif 'Multiple-Choice Component')
+![Multi-Choice Question Component](./assets/img/tds-2.gif 'Multi-Choice Question Component')
 
 ![Progress Bar Component](./assets/img/tds-3.gif 'Progress Bar Component')
 
