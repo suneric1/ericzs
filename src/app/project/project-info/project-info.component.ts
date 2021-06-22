@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-project-info',
@@ -7,7 +7,6 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
 })
 export class ProjectInfoComponent implements OnChanges {
   @Input() project;
-  @Input() loading;
   bgUrl;
 
   constructor() { }

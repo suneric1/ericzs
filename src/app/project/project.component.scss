@@ -7,23 +7,6 @@
   @include media-breakpoint-down(sm) {
     margin-top: 1rem;
   }
-
-  .loading {
-    * {
-      font-family: 'flow-circular' !important;
-      color: #f0f0f0 !important;
-      font-size: 24px;
-      line-height: .8 !important;
-      border: none !important;
-      animation: 1s color-breathing infinite alternate;
-    }
-    // img, iframe {
-    //   display: none;
-    // }
-    // .video {
-    //   animation: 1s bg-breathing infinite alternate;
-    // }
-  }
 }
 
 app-project-info {
@@ -51,6 +34,7 @@ app-project-info {
 }
 
 .content::ng-deep {
+  width: 100%;
   padding: 0 15px;
 
   @include media-breakpoint-down(sm) {

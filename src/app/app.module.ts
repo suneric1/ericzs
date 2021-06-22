@@ -18,6 +18,7 @@ import { ProjectComponent } from './project/project.component';
 import { ThumbnailComponent } from './thumbnail/thumbnail.component';
 import { ProjectInfoComponent } from './project/project-info/project-info.component';
 import { SocialLinksComponent } from './social-links/social-links.component';
+import { ArticleSkeletonComponent } from './shared/article-skeleton.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -36,7 +37,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProjectComponent,
     ThumbnailComponent,
     ProjectInfoComponent,
-    SocialLinksComponent
+    SocialLinksComponent,
+    ArticleSkeletonComponent
   ],
   entryComponents: [ParticlesRectComponent, ParticlesCircleComponent],
   imports: [
