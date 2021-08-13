@@ -63,7 +63,7 @@ Sponsor Portal 是 Slavic401k 的大客户们对 401k plan 进行管理的平台
 
 ###### 设计规范
 
-Telos Design System 是我发起并主导维护的一个内部设计系统，提供了可复用的基本组件和样式规范。它帮助我们快速地产出高保真的设计，同时促进了设计和技术之间的高效协作。在设计过程中对于具备普适性的新组件，我们也会通过设计评审加入到设计系统当中。
+[Telos Design System](/projects/telos-design-system) 是我发起并主导维护的一个内部设计系统，提供了可复用的基本组件和样式规范。它帮助我们快速地产出高保真的设计，同时促进了设计和技术之间的高效协作。在设计过程中对于具备普适性的新组件，我们也会通过设计评审加入到设计系统当中。
 
 ![Telos Design System](./assets/img/tds-sketch-lib.png 'Telos Design System')
 
