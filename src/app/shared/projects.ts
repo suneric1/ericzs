@@ -21,8 +21,8 @@ import {
 
 export const projects = [
   TELOS_DESIGN_SYSTEM,
-  BESPOKE,
   CONTRIBUTION,
+  BESPOKE,
   TABLEAU_DASHBOARD,
   PLAN_SETUP,
   USER_AUTH,

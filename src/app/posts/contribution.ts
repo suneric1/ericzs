@@ -2,7 +2,7 @@ import { Post } from './post';
 
 export const CONTRIBUTION: Post = {
   id: 'contribution',
-  title: 'Contribution Processing Request',
+  title: 'Sponsor Portal - Contribution',
   originLang: 'zh',
   thumbnail: 'contribution.png',
   size: 1,
@@ -19,7 +19,7 @@ export const CONTRIBUTION: Post = {
       'Sketch',
     ],
   },
-  category: 'Redesign For A Critical Business Process',
+  category: 'Redesigning A Critical Business Process',
   time: 'Q3 2019 - Q1 2020',
   tags: ['design', 'dev'],
   featured: true,

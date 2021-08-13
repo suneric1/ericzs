@@ -26,7 +26,7 @@ export class AppComponent {
   @ViewChild(RouterOutlet) outlet: RouterOutlet;
 
   constructor(router: Router, translate: TranslateService) {
-    const lang = localStorage.getItem('lang') || 'en';
+    const lang = localStorage.getItem('lang') || 'zh';
     translate.setDefaultLang(lang);
     translate.use(lang);
 
